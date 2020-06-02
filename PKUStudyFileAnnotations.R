@@ -22,6 +22,11 @@ library(tidyverse)
 library(synapser)
 synLogin()
 
+study = 'PKU study'
+projectlink = paste("[", study, "](/Explore/Studies/DetailsPage?study=",
+                    URLencode(study,  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
 ##############
 # List of tables and related annotations
 ##############
@@ -29,7 +34,8 @@ tables.annotations = list(
   
   ## Demographics
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -48,7 +54,8 @@ tables.annotations = list(
   
   ## DailyActivitySummary.activities
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -67,7 +74,8 @@ tables.annotations = list(
   
   ## Sleep.sleep
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -86,7 +94,8 @@ tables.annotations = list(
   
   ## RestingKineticTremor
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -105,7 +114,8 @@ tables.annotations = list(
   
   ## HeartRate.activities-heart
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -124,7 +134,8 @@ tables.annotations = list(
   
   ## DailyActivitySummary.summary
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -143,7 +154,8 @@ tables.annotations = list(
   
   ## HeartRate.activities.heart-intraday
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -162,7 +174,8 @@ tables.annotations = list(
   
   ## Sleep.summary
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -181,7 +194,8 @@ tables.annotations = list(
   
   ## Sleep Check-In
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -200,7 +214,8 @@ tables.annotations = list(
   
   ## Daily Check-In
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -219,7 +234,8 @@ tables.annotations = list(
   
   ## Default Health Data Record Table
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -238,7 +254,8 @@ tables.annotations = list(
   
   ## Tapping
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -257,7 +274,8 @@ tables.annotations = list(
   
   ## biomarin-pku-study-status
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -276,7 +294,8 @@ tables.annotations = list(
   
   ## Health Data Summary Table
   '' = list(consortium = 'mHealth',
-            study = 'PKU study',
+            study = study,
+            studyOrProject = projectlink,
             numberParticipants= '', 
             dataCollectionMethod= c(''),
             deviceType = c(''),
@@ -293,7 +312,7 @@ tables.annotations = list(
             dataDescriptionLocation = '',
             dataAccessInstructions = '')
   
-  )  
+)  
 
 #################
 # Now set annotations
