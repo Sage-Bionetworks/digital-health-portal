@@ -23,6 +23,7 @@ URL <- URLencode(STUDY,  reserved = FALSE, repeated = FALSE)
 PROJECT_ID <- 'syn23277418'
 FILE_VIEW_ID <- "syn23545224"
 PROJECT_LINK <- glue::glue("[{STUDY}](/Explore/Studies/DetailsPage?study={URL})")
+INDEX <- FALSE
 
 ############################
 # Tables for dHealth
@@ -95,7 +96,7 @@ feature_annot_list <- list(
                      dataType=c('sensor', 'surveyData'),
                      dataSubtype=c('raw','metadata'),
                      metadataType='assessment',
-                     dhPortalIndex = 'TRUE',
+                     dhPortalIndex = INDEX,
                      dataDescriptionLocation = 'syn23277418/wiki/607308',
                      dataAccessInstructions = 'syn23277418/wiki/607032'),
     "walking" = list(consortium = 'mHealth',
@@ -113,7 +114,7 @@ feature_annot_list <- list(
                      dataType=c('sensor', 'surveyData'),
                      dataSubtype=c('raw', 'metadata'),
                      metadataType= c('assessment'),
-                     dhPortalIndex = 'TRUE',
+                     dhPortalIndex = INDEX,
                      dataDescriptionLocation = 'syn23277418/wiki/607308',
                      dataAccessInstructions = 'syn23277418/wiki/607032'),
     "voice" = list(consortium = 'mHealth',
@@ -130,7 +131,7 @@ feature_annot_list <- list(
                    digitalAssessmentDetails = c('phonation'),
                    dataType=c('sensor', 'surveyData'),
                    metadataType='assessment',
-                   dhPortalIndex = 'TRUE',
+                   dhPortalIndex = INDEX,
                    dataDescriptionLocation = 'syn23277418/wiki/607308',
                    dataAccessInstructions = 'syn23277418/wiki/607032'),
     "resting" = list(consortium = 'mHealth',
@@ -147,7 +148,7 @@ feature_annot_list <- list(
                      digitalAssessmentDetails = c('standing'),
                      dataType=c('sensor', 'surveyData'),
                      metadataType= c('assessment'),
-                     dhPortalIndex = 'TRUE',
+                     dhPortalIndex = INDEX,
                      dataDescriptionLocation = 'syn23277418/wiki/607308',
                      dataAccessInstructions = 'syn23277418/wiki/607032')
 )
@@ -181,7 +182,7 @@ healthcode_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'),
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607307',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "case vs controls" = list(
@@ -209,7 +210,7 @@ healthcode_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'),
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607307',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "identity confounding" = list(
@@ -237,7 +238,7 @@ healthcode_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'),
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607307',
         dataAccessInstructions = 'syn23277418/wiki/607032')
 )
@@ -271,7 +272,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607032',
         dataAccessInstructions = 'syn23277418/wiki/607314'),
     "repeated measurements" = list(
@@ -299,7 +300,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607320',
         dataAccessInstructions = 'syn23277418/wiki/607032',
         analysisType = 'case vs controls',
@@ -329,7 +330,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607316',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "feature variability comparison" = list(
@@ -357,7 +358,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607322',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "identity confounding" = list(
@@ -385,7 +386,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607317',
         dataAccessInstructions = 'syn23277418/wiki/607032',
         analysisSubtype = 'identity confounding'),
@@ -414,7 +415,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607318',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "combined model" = list(
@@ -442,7 +443,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = '',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "correlation test" = list(
@@ -470,7 +471,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607321',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "distance correlation test" = list(
@@ -498,7 +499,7 @@ intermediate_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/607315',
         dataAccessInstructions = 'syn23277418/wiki/607032')
 )
@@ -532,7 +533,7 @@ figure_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/606925',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "case vs controls" = list(
@@ -560,7 +561,7 @@ figure_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         dataDescriptionLocation = 'syn23277418/wiki/606926',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "retention analysis" = list(
@@ -588,7 +589,7 @@ figure_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         analysisType = "retention analysis",
         dataDescriptionLocation = 'syn23277418/wiki/606926',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
@@ -617,7 +618,7 @@ figure_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         analysisType = "records per mpower tasks",
         dataDescriptionLocation = 'syn23277418/wiki/606926',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
@@ -646,7 +647,7 @@ figure_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         analysisType = "identity confounding",
         dataDescriptionLocation = 'syn23277418/wiki/606926',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
@@ -675,7 +676,7 @@ figure_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         analysisType = "walking task adherence",
         dataDescriptionLocation = 'syn23277418/wiki/606926',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
@@ -704,7 +705,7 @@ figure_annot_list <- list(
                                      'motor coordination'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         analysisType = "combined model",
         dataDescriptionLocation = 'syn23277418/wiki/606925',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
@@ -733,7 +734,7 @@ figure_annot_list <- list(
                                      'tapping'),
         dataType=c('analysis'),
         dataSubtype=c(), 
-        dhPortalIndex = 'TRUE',
+        dhPortalIndex = INDEX,
         analysisType = "demographics confounders",
         dataDescriptionLocation = 'syn23277418/wiki/606926',
         dataAccessInstructions = 'syn23277418/wiki/607032')

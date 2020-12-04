@@ -322,6 +322,8 @@ projects.annotations <- list(
                        studyDataDescriptionLocation = 'syn18492837/wiki/590797',
                        studyDescription = 'The SleepHealth Mobile App Study was created to investigate how sleep is associated with general health, daytime alertness, medical conditions, and productivity.',
                        dataAccessInstructions = 'syn18492837/wiki/590794'),
+  
+  ## mPower Study (Rerun Analysis)
   'syn23277418' = list(consortium = 'mHealth',
                       collectionType = 'Observational Study',
                       study = 'mPower - A Smartphone Approach to Remotely Monitor PD and Individual Response to Therapy',
