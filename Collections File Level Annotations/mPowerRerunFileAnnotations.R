@@ -53,7 +53,7 @@ tables.annotations <- list(
                          dataType=c('sensor'),
                          dataSubtype=c('raw', 'processed'),
                          metadataType= c('assessment'),
-                         dhPortalIndex = 'FALSE',
+                         dhPortalIndex = INDEX,
                          dataDescriptionLocation = 'syn23277418/wiki/607307',
                          dataAccessInstructions = 'syn23277418/wiki/607032')
 )
