@@ -444,7 +444,7 @@ intermediate_annot_list <- list(
         dataType=c('analysis'),
         dataSubtype=c('processed'), 
         dhPortalIndex = INDEX,
-        dataDescriptionLocation = '',
+        dataDescriptionLocation = 'syn23277418/wiki/607434',
         dataAccessInstructions = 'syn23277418/wiki/607032'),
     "correlation test" = list(
         consortium = 'mHealth',
