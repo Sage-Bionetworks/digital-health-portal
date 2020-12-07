@@ -334,7 +334,7 @@ projects.annotations <- list(
                        sensorType = c('touchscreen', 'accelerometer', 'microphone',
                                       'gyroscope', 'magnetometer'),
                        devicePlatform = c('iOS'), 
-                       deviceLocation = c('handheld', 'pocket', 'flat surface'),
+                       deviceLocation = c('hand', 'pocket', 'flat surface'),
                        diagnosis=  c("Parkinson's Disease", 'control'), 
                        reportedOutcome = c('medication report', 'PDQ-8', 'MDS-UPDRS',
                                            'demographics survey'),
