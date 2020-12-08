@@ -18,7 +18,7 @@ synLogin()
 ############################
 # Global Variables
 ############################
-STUDY <- 'mPower - A Smartphone Approach to Remotely Monitor PD and Individual Response to Therapy'
+STUDY <- 'mPower - Features, model and analysis for Omberg et al (2021)'
 URL <- URLencode(STUDY,  reserved = FALSE, repeated = FALSE)
 PROJECT_ID <- 'syn23277418'
 FILE_VIEW_ID <- "syn23545224"

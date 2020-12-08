@@ -326,7 +326,7 @@ projects.annotations <- list(
   ## mPower Study (Rerun Analysis)
   'syn23277418' = list(consortium = 'mHealth',
                        collectionType = 'Observational Study',
-                       study = 'mPower - A Smartphone Approach to Remotely Monitor PD and Individual Response to Therapy',
+                       study = 'mPower - Features, model and analysis for Omberg et al (2021)',
                        dataCollectionMethod= c('active', 
                                                'patient reported outcome',
                                                'clinical assessment'),
@@ -350,7 +350,7 @@ projects.annotations <- list(
                        studyDescriptionLocation = 'syn23277418', 
                        studyDataDescriptionLocation = 'syn23277418/wiki/607307',
                        studyDescription = 'This project represents the outputs and intermediate results of the analysis presented in mPower Nature Biotech Submission.',
-                       dataAccessInstructions = 'syn23277418/wiki/607032'),
+                       dataAccessInstructions = 'syn23277418/wiki/607032')
 )
 
 ##############
