@@ -48,7 +48,7 @@ projects.annotations <- list(
                                      'gyroscope', 'magnetometer'),
                       devicePlatform = c('iOS'), 
                       deviceLocation = c('hand', 'pocket', 'flat surface'),
-                      diagnosis=  c("Parkinson's disease", 'control'), 
+                      diagnosis=  c("Parkinson's Disease", 'control'), 
                       reportedOutcome = c('medication report', 'PDQ-8', 'MDS-UPDRS',
                                           'demographics survey'),
                       digitalAssessmentCategory= c('phonation', 'gait',
@@ -321,7 +321,36 @@ projects.annotations <- list(
                        studyDescriptionLocation = 'syn18492837', 
                        studyDataDescriptionLocation = 'syn18492837/wiki/590797',
                        studyDescription = 'The SleepHealth Mobile App Study was created to investigate how sleep is associated with general health, daytime alertness, medical conditions, and productivity.',
-                       dataAccessInstructions = 'syn18492837/wiki/590794')
+                       dataAccessInstructions = 'syn18492837/wiki/590794'),
+  
+  ## mPower Study (Rerun Analysis)
+  'syn23277418' = list(consortium = 'mHealth',
+                       collectionType = 'Observational Study',
+                       study = 'mPower - Features, model and analysis for Omberg et al (2021)',
+                       dataCollectionMethod= c('active', 
+                                               'patient reported outcome',
+                                               'clinical assessment'),
+                       deviceType = c('handheld'),
+                       sensorType = c('touchscreen', 'accelerometer', 'microphone',
+                                      'gyroscope', 'magnetometer'),
+                       devicePlatform = c('iOS'), 
+                       deviceLocation = c('hand', 'pocket', 'flat surface'),
+                       diagnosis=  c("Parkinson's Disease", 'control'), 
+                       reportedOutcome = c('medication report', 'PDQ-8', 'MDS-UPDRS',
+                                           'demographics survey'),
+                       digitalAssessmentCategory= c('phonation', 'gait',
+                                                    'motor coordination', 
+                                                    'cognition'),
+                       digitalAssessmentDetails = c('walking (flat)', 'standing',
+                                                    'phonation', 'tapping'),
+                       sensorDataType = c('raw', 'processed'),
+                       investigator= c('Sage Bionetworks'),
+                       keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
+                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       studyDescriptionLocation = 'syn23277418', 
+                       studyDataDescriptionLocation = 'syn23277418/wiki/607307',
+                       studyDescription = 'This project represents the outputs and intermediate results of the analysis presented in mPower Nature Biotech Submission.',
+                       dataAccessInstructions = 'syn23277418/wiki/607032')
 )
 
 ##############
