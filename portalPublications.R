@@ -748,6 +748,34 @@ publications.list <- list(
     # synID = '',
     Featured = 'TRUE', 
     publicationType = 'tool'
+  ),
+  
+  #### elevateMS 
+  # 1
+  "Pratap_JMIRmHealth_2020" = list(
+    Author = c('Pratap A', 'Grant D', 'Vegesna A', 
+               'Tummalacherla M', 'Cohan S', 'Deshpande C',
+               'Mangravite L', 'Omberg L' ),
+    Title = 'Evaluating the Utility of Smartphone-Based Sensor Assessments in Persons With Multiple Sclerosis in the Real-World Using an App (elevateMS): Observational, Prospective Pilot Digital Health Study',
+    Journal = 'JMIR mHealth and uHealth',
+    PMID = '33107827',
+    ISSN = '2291-5222',
+    Year = as.integer(2020),
+    doi = '10.2196/22108',
+    url = 'https://doi.org/10.2196/22108',
+    Abstract = 'Background:Multiple sclerosis (MS) is a chronic neurodegenerative disease. Current monitoring practices predominantly rely on brief and infrequent assessments, which may not be representative of the real-world patient experience. Smartphone technology provides an opportunity to assess people’s daily-lived experience of MS on a frequent, regular basis outside of episodic clinical evaluations. \n Objective: The objectives of this study were to evaluate the feasibility and utility of capturing real-world MS-related health data remotely using a smartphone app, “elevateMS,” to investigate the associations between self-reported MS severity and sensor-based active functional tests measurements, and the impact of local weather conditions on disease burden. \n Methods:This was a 12-week, observational, digital health study involving 3 cohorts: self-referred participants who reported an MS diagnosis, clinic-referred participants with neurologist-confirmed MS, and participants without MS (controls). Participants downloaded the elevateMS app and completed baseline assessments, including self-reported physical ability (Patient-Determined Disease Steps [PDDS]), as well as longitudinal assessments of quality of life (Quality of Life in Neurological Disorders [Neuro-QoL] Cognitive, Upper Extremity, and Lower Extremity Function) and daily health (MS symptoms, triggers, health, mobility, pain). Participants also completed functional tests (finger-tapping, walk and balance, voice-based Digit Symbol Substitution Test [DSST], and finger-to-nose) as an independent assessment of MS-related cognition and motor activity. Local weather data were collected each time participants completed an active task. Associations between self-reported baseline/longitudinal assessments, functional tests, and weather were evaluated using linear (for cross-sectional data) and mixed-effects (for longitudinal data) regression models. \n Results: A total of 660 individuals enrolled in the study; 31 withdrew, 495 had MS (n=359 self-referred, n=136 clinic-referred), and 134 were controls. Participation was highest in clinic-referred versus self-referred participants (median retention: 25.5 vs 7.0 days). The top 5 most common MS symptoms, reported at least once by participants with MS, were fatigue (310/495, 62.6%), weakness (222/495, 44.8%), memory/attention issues (209/495, 42.2%), and difficulty walking (205/495, 41.4%), and the most common triggers were high ambient temperature (259/495, 52.3%), stress (250/495, 50.5%), and late bedtime (221/495, 44.6%). Baseline PDDS was significantly associated with functional test performance in participants with MS (mixed model–based estimate of most significant feature across functional tests [β]: finger-tapping: β=–43.64, P<.001; DSST: β=–5.47, P=.005; walk and balance: β=–.39, P=.001; finger-to-nose: β=.01, P=.01). Longitudinal Neuro-QoL scores were also significantly associated with functional tests (finger-tapping with Upper Extremity Function: β=.40, P<.001; walk and balance with Lower Extremity Function: β=–99.18, P=.02; DSST with Cognitive Function: β=1.60, P=.03). Finally, local temperature was significantly associated with participants’ test performance (finger-tapping: β=–.14, P<.001; DSST: β=–.06, P=.009; finger-to-nose: β=–53.88, P<.001). \n Conclusions: The elevateMS study app captured the real-world experience of MS, characterized some MS symptoms, and assessed the impact of environmental factors on symptom severity. Our study provides further evidence that supports smartphone app use to monitor MS with both active assessments and patient-reported measures of disease burden. App-based tracking may provide unique and timely real-world data for clinicians and patients, resulting in improved disease insights and management.',
+    Consortium = 'mHealth',
+    Study = 'elevateMS Study',
+    Diagnosis = c('multiple sclerosis', 'control'),
+    digitalAssessmentCategory = c('postural tremor', 'gait', 'motor coordination',
+                                  'cognition', 'quality of life','phonation',
+                                  'action tremor'),
+    sensorType = c('accelerometer', 'gyroscope',
+                   'magnetometer', 'touchscreen', 'microphone'),
+    synID = 'syn21140362',
+    Featured = 'TRUE',
+    studyOrProject = elevatemsurl,
+    publicationType = 'study'
   )
   
 )
