@@ -693,7 +693,7 @@ publications.list <- list(
   
   #### Parkinsons Disease Digital Biomarker DREAM Challenge 
   # 1
-  "Sieberts_bioarXiv_2020" = list(
+  "Sieberts_npjDigiMed_2021" = list(
     Author = c('Sieberts SK', 'Schaff J', 'Duda M',
                'Pataki BÁ', 'Sun M', 'Snyder P',
                'Daneault JF', 'Parisi F', 'Costante G',
@@ -706,17 +706,18 @@ publications.list <- list(
                'Perrin D', 'Perumal TM', 'Rad NM',
                'Rainaldi E', 'Sapienza S', 'Schwab P',
                'Shokhirev N', 'Venalainen MS', 'Vergara-Diaz G',
-               'Zhang Y', 'Wang Y', 'Guan Y',
+               'Zhang Y','the Parkinson’s Disease Digital Biomarker Challenge Consortium',
+               'Wang Y', 'Guan Y',
                'Brunner D', 'Bonato P', 'Mangravite LM',
                'Omberg L'),
     Title = 'Crowdsourcing digital health measures to predict Parkinson’s disease severity: the Parkinson’s Disease Digital Biomarker DREAM Challenge',
-    Journal = 'bioarXiv',
+    Journal = 'npj Digital Medicine',
     # PMID = '',
-    # ISSN = '',
-    Year = as.integer(2020),
-    doi = '10.1101/2020.01.13.904722',
-    url = 'https://doi.org/10.1101/2020.01.13.904722',
-    Abstract = 'Mobile health, the collection of data using wearables and sensors, is a rapidly growing field in health research with many applications. Deriving validated measures of disease and severity that can be used clinically or as outcome measures in clinical trials, referred to as digital biomarkers, has proven difficult. In part due to the complicated analytical approaches necessary to develop these metrics. Here we describe the use of crowdsourcing to specifically evaluate and benchmark features derived from accelerometer and gyroscope data in two different datasets to predict the presence of Parkinson’s Disease (PD) and severity of three PD symptoms: tremor, dyskinesia and bradykinesia. Forty teams from around the world submitted features, and achieved drastically improved predictive performance for PD status (best AUROC=0.87), as well as tremor (best AUPR=0.75), dyskinesia (best AUPR=0.48) and bradykinesia (best AUPR=0.95) severity.',
+    ISSN = '2398-6352',
+    Year = as.integer(2021),
+    doi = '10.1038/s41746-021-00414-7',
+    url = 'https://doi.org/10.1038/s41746-021-00414-7',
+    Abstract = 'Consumer wearables and sensors are a rich source of data about patients’ daily disease and symptom burden, particularly in the case of movement disorders like Parkinson’s disease (PD). However, interpreting these complex data into so-called digital biomarkers requires complicated analytical approaches, and validating these biomarkers requires sufficient data and unbiased evaluation methods. Here we describe the use of crowdsourcing to specifically evaluate and benchmark features derived from accelerometer and gyroscope data in two different datasets to predict the presence of PD and severity of three PD symptoms: tremor, dyskinesia, and bradykinesia. Forty teams from around the world submitted features, and achieved drastically improved predictive performance for PD status (best AUROC=0.87), as well as tremor- (best AUPR=0.75), dyskinesia- (best AUPR=0.48) and bradykinesia-severity (best AUPR=0.95).',
     Consortium = 'mHealth',
     Study = 'Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge',
     Diagnosis = c("Parkinson's disease", "control"),
