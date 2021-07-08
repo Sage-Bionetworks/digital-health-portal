@@ -23,7 +23,7 @@ URL <- URLencode(STUDY,  reserved = FALSE, repeated = FALSE)
 PROJECT_ID <- 'syn23277418'
 FILE_VIEW_ID <- "syn23545224"
 PROJECT_LINK <- glue::glue("[{STUDY}](/Explore/Studies/DetailsPage?study={URL})")
-INDEX <- 'FALSE'
+INDEX <- 'TRUE'
 
 ############################
 # Tables for dHealth
