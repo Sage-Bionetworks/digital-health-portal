@@ -76,6 +76,8 @@ tables.list <- names(tables.annotations) %>%
 resource <- synTableQuery(
     glue::glue("SELECT * FROM {FILE_VIEW_ID}"))$asDataFrame()
 
+resource <- resource %>% 
+    dplyr::filter(userSubset == 'public data')
 
 ################################################
 # Sensor Features
