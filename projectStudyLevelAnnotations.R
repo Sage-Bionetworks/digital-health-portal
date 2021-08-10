@@ -325,7 +325,7 @@ projects.annotations <- list(
   
   ## mPower Study (Rerun Analysis)
   'syn23277418' = list(consortium = 'mHealth',
-                       collectionType = 'Observational Study',
+                       collectionType = 'Analysis',
                        study = 'mPower - Features, model and analysis for Omberg et al (2021)',
                        dataCollectionMethod= c('active', 
                                                'patient reported outcome',
