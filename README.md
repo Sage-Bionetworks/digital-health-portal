@@ -1,4 +1,4 @@
-<p align="center"><img width=50% src="https://dhealth.synapse.org/static/media/logoHeader.718dba27.svg"></p>
+<p align="center"><img width=50% src="https://dhealth.synapse.org/static/media/logoHeader.af2d17d5.svg"></p>
 
 
 
