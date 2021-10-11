@@ -41,6 +41,10 @@ mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/Detail
                 URLencode('mPower Mobile Parkinson Disease Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
 
+mpowerrerunurl = paste('[mPower - Features, model and analysis for Omberg et al (2021)](/Explore/Studies/DetailsPage?study=',
+                       URLencode('mPower - Features, model and analysis for Omberg et al (2021)', reserved = FALSE, repeated = FALSE),
+                       ')', sep = "")
+
 asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
@@ -396,6 +400,32 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
+  
+  #### mpower rerun project
+  "Omberg_NatBioTech_2021" = list(
+    Author = c('Omberg L', 'Neto EC', 'Perumal TM', 'Pratap A',
+               'Tediarjo A', 'Adams J', 'Bloem BR', 'Bot BM', 'Elson M',
+               'Goldman SM', 'Kellen M', 'Kieburtz K', 'Klein A', 'Little MA',
+               'Schneider R', 'Suver C', 'Tarolli C', 'Tanner CM', 'Trister AD',
+               'Wilbanks J', 'Dorsey ER', 'Mangravite LM'),
+    Title = 'Remote smartphone monitoring of Parkinson’s disease and individual response to therapy',
+    Journal = 'Nature Biotechnology',
+    PMID = '34373643',
+    ISSN = '1546-1696',
+    Year = as.integer(2021),
+    doi = '10.1038/s41587-021-00974-9',
+    url = 'https://doi.org/10.1038/s41587-021-00974-9',
+    Abstract = 'Remote health assessments that gather real-world data (RWD) outside clinic settings require a clear understanding of appropriate methods for data collection, quality assessment, analysis and interpretation. Here we examine the performance and limitations of smartphones in collecting RWD in the remote mPower observational study of Parkinson\'s disease (PD). Within the first 6 months of study commencement, 960 participants had enrolled and performed at least five self-administered active PD symptom assessments (speeded tapping, gait/balance, phonation or memory). Task performance, especially speeded tapping, was predictive of self-reported PD status (area under the receiver operating characteristic curve (AUC) = 0.8) and correlated with in-clinic evaluation of disease severity (r = 0.71; P < 1.8 × 10-6) when compared with motor Movement Disorder Society-Unified Parkinson\'s Disease Rating Scale (MDS-UPDRS). Although remote assessment requires careful consideration for accurate interpretation of RWD, our results support the use of smartphones and wearables in objective and personalized disease assessments.',
+    Consortium = 'mHealth',
+    Study = 'mPower - Features, model and analysis for Omberg et al (2021)',
+    # Diagnosis = c(''),
+    # digitalAssessmentCategory = c(''),
+    # sensorType = c(''),
+    synID = 'syn23277418',
+    Featured = 'TRUE',
+    studyOrProject = mpowerrerunurl,
+    publicationType = 'study'
+    ),
   
   #### Asthma Mobile Health Study
   # 1
