@@ -41,6 +41,10 @@ mpowerurl=paste('[mPower Mobile Parkinson Disease Study](/Explore/Studies/Detail
                 URLencode('mPower Mobile Parkinson Disease Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
 
+mpowerrerunurl = paste('[mPower - Features, model and analysis for Omberg et al (2021)](/Explore/Studies/DetailsPage?study=',
+                       URLencode('mPower - Features, model and analysis for Omberg et al (2021)', reserved = FALSE, repeated = FALSE),
+                       ')', sep = "")
+
 asthmaurl=paste('[Asthma Mobile Health Study](/Explore/Studies/DetailsPage?study=',
                 URLencode('Asthma Mobile Health Study', reserved = FALSE, repeated = FALSE),
                 ')', sep = "")
@@ -397,6 +401,32 @@ publications.list <- list(
     publicationType = 'study'
   ),
   
+  #### mpower rerun project
+  "Omberg_NatBioTech_2021" = list(
+    Author = c('Omberg L', 'Neto EC', 'Perumal TM', 'Pratap A',
+               'Tediarjo A', 'Adams J', 'Bloem BR', 'Bot BM', 'Elson M',
+               'Goldman SM', 'Kellen M', 'Kieburtz K', 'Klein A', 'Little MA',
+               'Schneider R', 'Suver C', 'Tarolli C', 'Tanner CM', 'Trister AD',
+               'Wilbanks J', 'Dorsey ER', 'Mangravite LM'),
+    Title = 'Remote smartphone monitoring of Parkinson’s disease and individual response to therapy',
+    Journal = 'Nature Biotechnology',
+    PMID = '34373643',
+    ISSN = '1546-1696',
+    Year = as.integer(2021),
+    doi = '10.1038/s41587-021-00974-9',
+    url = 'https://doi.org/10.1038/s41587-021-00974-9',
+    Abstract = 'Remote health assessments that gather real-world data (RWD) outside clinic settings require a clear understanding of appropriate methods for data collection, quality assessment, analysis and interpretation. Here we examine the performance and limitations of smartphones in collecting RWD in the remote mPower observational study of Parkinson\'s disease (PD). Within the first 6 months of study commencement, 960 participants had enrolled and performed at least five self-administered active PD symptom assessments (speeded tapping, gait/balance, phonation or memory). Task performance, especially speeded tapping, was predictive of self-reported PD status (area under the receiver operating characteristic curve (AUC) = 0.8) and correlated with in-clinic evaluation of disease severity (r = 0.71; P < 1.8 × 10-6) when compared with motor Movement Disorder Society-Unified Parkinson\'s Disease Rating Scale (MDS-UPDRS). Although remote assessment requires careful consideration for accurate interpretation of RWD, our results support the use of smartphones and wearables in objective and personalized disease assessments.',
+    Consortium = 'mHealth',
+    Study = 'mPower - Features, model and analysis for Omberg et al (2021)',
+    # Diagnosis = c(''),
+    # digitalAssessmentCategory = c(''),
+    # sensorType = c(''),
+    synID = 'syn23277418',
+    Featured = 'TRUE',
+    studyOrProject = mpowerrerunurl,
+    publicationType = 'study'
+    ),
+  
   #### Asthma Mobile Health Study
   # 1
   "Chan_NatBioTech_2017" = list(
@@ -693,7 +723,7 @@ publications.list <- list(
   
   #### Parkinsons Disease Digital Biomarker DREAM Challenge 
   # 1
-  "Sieberts_bioarXiv_2020" = list(
+  "Sieberts_npjDigiMed_2021" = list(
     Author = c('Sieberts SK', 'Schaff J', 'Duda M',
                'Pataki BÁ', 'Sun M', 'Snyder P',
                'Daneault JF', 'Parisi F', 'Costante G',
@@ -706,17 +736,18 @@ publications.list <- list(
                'Perrin D', 'Perumal TM', 'Rad NM',
                'Rainaldi E', 'Sapienza S', 'Schwab P',
                'Shokhirev N', 'Venalainen MS', 'Vergara-Diaz G',
-               'Zhang Y', 'Wang Y', 'Guan Y',
+               'Zhang Y','the Parkinson’s Disease Digital Biomarker Challenge Consortium',
+               'Wang Y', 'Guan Y',
                'Brunner D', 'Bonato P', 'Mangravite LM',
                'Omberg L'),
     Title = 'Crowdsourcing digital health measures to predict Parkinson’s disease severity: the Parkinson’s Disease Digital Biomarker DREAM Challenge',
-    Journal = 'bioarXiv',
+    Journal = 'npj Digital Medicine',
     # PMID = '',
-    # ISSN = '',
-    Year = as.integer(2020),
-    doi = '10.1101/2020.01.13.904722',
-    url = 'https://doi.org/10.1101/2020.01.13.904722',
-    Abstract = 'Mobile health, the collection of data using wearables and sensors, is a rapidly growing field in health research with many applications. Deriving validated measures of disease and severity that can be used clinically or as outcome measures in clinical trials, referred to as digital biomarkers, has proven difficult. In part due to the complicated analytical approaches necessary to develop these metrics. Here we describe the use of crowdsourcing to specifically evaluate and benchmark features derived from accelerometer and gyroscope data in two different datasets to predict the presence of Parkinson’s Disease (PD) and severity of three PD symptoms: tremor, dyskinesia and bradykinesia. Forty teams from around the world submitted features, and achieved drastically improved predictive performance for PD status (best AUROC=0.87), as well as tremor (best AUPR=0.75), dyskinesia (best AUPR=0.48) and bradykinesia (best AUPR=0.95) severity.',
+    ISSN = '2398-6352',
+    Year = as.integer(2021),
+    doi = '10.1038/s41746-021-00414-7',
+    url = 'https://doi.org/10.1038/s41746-021-00414-7',
+    Abstract = 'Consumer wearables and sensors are a rich source of data about patients’ daily disease and symptom burden, particularly in the case of movement disorders like Parkinson’s disease (PD). However, interpreting these complex data into so-called digital biomarkers requires complicated analytical approaches, and validating these biomarkers requires sufficient data and unbiased evaluation methods. Here we describe the use of crowdsourcing to specifically evaluate and benchmark features derived from accelerometer and gyroscope data in two different datasets to predict the presence of PD and severity of three PD symptoms: tremor, dyskinesia, and bradykinesia. Forty teams from around the world submitted features, and achieved drastically improved predictive performance for PD status (best AUROC=0.87), as well as tremor- (best AUPR=0.75), dyskinesia- (best AUPR=0.48) and bradykinesia-severity (best AUPR=0.95).',
     Consortium = 'mHealth',
     Study = 'Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge',
     Diagnosis = c("Parkinson's disease", "control"),
@@ -748,6 +779,34 @@ publications.list <- list(
     # synID = '',
     Featured = 'TRUE', 
     publicationType = 'tool'
+  ),
+  
+  #### elevateMS 
+  # 1
+  "Pratap_JMIRmHealth_2020" = list(
+    Author = c('Pratap A', 'Grant D', 'Vegesna A', 
+               'Tummalacherla M', 'Cohan S', 'Deshpande C',
+               'Mangravite L', 'Omberg L' ),
+    Title = 'Evaluating the Utility of Smartphone-Based Sensor Assessments in Persons With Multiple Sclerosis in the Real-World Using an App (elevateMS): Observational, Prospective Pilot Digital Health Study',
+    Journal = 'JMIR mHealth and uHealth',
+    PMID = '33107827',
+    ISSN = '2291-5222',
+    Year = as.integer(2020),
+    doi = '10.2196/22108',
+    url = 'https://doi.org/10.2196/22108',
+    Abstract = 'Background:Multiple sclerosis (MS) is a chronic neurodegenerative disease. Current monitoring practices predominantly rely on brief and infrequent assessments, which may not be representative of the real-world patient experience. Smartphone technology provides an opportunity to assess people’s daily-lived experience of MS on a frequent, regular basis outside of episodic clinical evaluations. \n Objective: The objectives of this study were to evaluate the feasibility and utility of capturing real-world MS-related health data remotely using a smartphone app, “elevateMS,” to investigate the associations between self-reported MS severity and sensor-based active functional tests measurements, and the impact of local weather conditions on disease burden. \n Methods:This was a 12-week, observational, digital health study involving 3 cohorts: self-referred participants who reported an MS diagnosis, clinic-referred participants with neurologist-confirmed MS, and participants without MS (controls). Participants downloaded the elevateMS app and completed baseline assessments, including self-reported physical ability (Patient-Determined Disease Steps [PDDS]), as well as longitudinal assessments of quality of life (Quality of Life in Neurological Disorders [Neuro-QoL] Cognitive, Upper Extremity, and Lower Extremity Function) and daily health (MS symptoms, triggers, health, mobility, pain). Participants also completed functional tests (finger-tapping, walk and balance, voice-based Digit Symbol Substitution Test [DSST], and finger-to-nose) as an independent assessment of MS-related cognition and motor activity. Local weather data were collected each time participants completed an active task. Associations between self-reported baseline/longitudinal assessments, functional tests, and weather were evaluated using linear (for cross-sectional data) and mixed-effects (for longitudinal data) regression models. \n Results: A total of 660 individuals enrolled in the study; 31 withdrew, 495 had MS (n=359 self-referred, n=136 clinic-referred), and 134 were controls. Participation was highest in clinic-referred versus self-referred participants (median retention: 25.5 vs 7.0 days). The top 5 most common MS symptoms, reported at least once by participants with MS, were fatigue (310/495, 62.6%), weakness (222/495, 44.8%), memory/attention issues (209/495, 42.2%), and difficulty walking (205/495, 41.4%), and the most common triggers were high ambient temperature (259/495, 52.3%), stress (250/495, 50.5%), and late bedtime (221/495, 44.6%). Baseline PDDS was significantly associated with functional test performance in participants with MS (mixed model–based estimate of most significant feature across functional tests [β]: finger-tapping: β=–43.64, P<.001; DSST: β=–5.47, P=.005; walk and balance: β=–.39, P=.001; finger-to-nose: β=.01, P=.01). Longitudinal Neuro-QoL scores were also significantly associated with functional tests (finger-tapping with Upper Extremity Function: β=.40, P<.001; walk and balance with Lower Extremity Function: β=–99.18, P=.02; DSST with Cognitive Function: β=1.60, P=.03). Finally, local temperature was significantly associated with participants’ test performance (finger-tapping: β=–.14, P<.001; DSST: β=–.06, P=.009; finger-to-nose: β=–53.88, P<.001). \n Conclusions: The elevateMS study app captured the real-world experience of MS, characterized some MS symptoms, and assessed the impact of environmental factors on symptom severity. Our study provides further evidence that supports smartphone app use to monitor MS with both active assessments and patient-reported measures of disease burden. App-based tracking may provide unique and timely real-world data for clinicians and patients, resulting in improved disease insights and management.',
+    Consortium = 'mHealth',
+    Study = 'elevateMS Study',
+    Diagnosis = c('multiple sclerosis', 'control'),
+    digitalAssessmentCategory = c('postural tremor', 'gait', 'motor coordination',
+                                  'cognition', 'quality of life','phonation',
+                                  'action tremor'),
+    sensorType = c('accelerometer', 'gyroscope',
+                   'magnetometer', 'touchscreen', 'microphone'),
+    synID = 'syn21140362',
+    Featured = 'TRUE',
+    studyOrProject = elevatemsurl,
+    publicationType = 'study'
   )
   
 )

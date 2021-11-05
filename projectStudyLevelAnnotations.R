@@ -183,7 +183,7 @@ projects.annotations <- list(
                        # intervention = '',
                        keywords = c('cardiorespiratory fitness', 'physical activity',
                                     'heart rate'),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn22107959', 
                        studyDataDescriptionLocation = 'syn22107959/wiki/605543',
                        studyDescription = 'Heart Snapshot is a validation study for smartphone based measurement of VO2 max in clinical and real world settings',
@@ -325,7 +325,7 @@ projects.annotations <- list(
   
   ## mPower Study (Rerun Analysis)
   'syn23277418' = list(consortium = 'mHealth',
-                       collectionType = 'Observational Study',
+                       collectionType = 'Analysis',
                        study = 'mPower - Features, model and analysis for Omberg et al (2021)',
                        dataCollectionMethod= c('active', 
                                                'patient reported outcome',
@@ -346,7 +346,7 @@ projects.annotations <- list(
                        sensorDataType = c('raw', 'processed'),
                        investigator= c('Sage Bionetworks'),
                        keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn23277418', 
                        studyDataDescriptionLocation = 'syn23277418/wiki/607307',
                        studyDescription = 'This project represents the outputs and intermediate results of the analysis presented in mPower Nature Biotech Submission.',

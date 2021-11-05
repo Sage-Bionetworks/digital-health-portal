@@ -23,7 +23,7 @@ URL <- URLencode(STUDY,  reserved = FALSE, repeated = FALSE)
 PROJECT_ID <- 'syn23277418'
 FILE_VIEW_ID <- "syn23545224"
 PROJECT_LINK <- glue::glue("[{STUDY}](/Explore/Studies/DetailsPage?study={URL})")
-INDEX <- 'FALSE'
+INDEX <- 'TRUE'
 
 ############################
 # Tables for dHealth
@@ -76,6 +76,16 @@ tables.list <- names(tables.annotations) %>%
 resource <- synTableQuery(
     glue::glue("SELECT * FROM {FILE_VIEW_ID}"))$asDataFrame()
 
+resource_public <- resource %>% 
+    dplyr::filter(userSubset == 'public data')
+
+# Index only the Figures from the 6 months study on the dHealth portal
+resource_months <- resource %>% 
+    dplyr::filter(userSubset == '6 months study') %>% 
+    dplyr::filter(pipelineStep == "figures")
+
+resource <- resource_public %>% 
+    dplyr::full_join(resource_months)
 
 ################################################
 # Sensor Features

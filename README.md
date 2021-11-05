@@ -1,4 +1,4 @@
-<p align="center"><img width=50% src="https://dhealth.synapse.org/static/media/logoHeader.718dba27.svg"></p>
+<p align="center"><img width=50% src="https://dhealth.synapse.org/static/media/logoHeader.af2d17d5.svg"></p>
 
 
 
@@ -27,25 +27,28 @@ Tools listed on dHealth - Digital Health Portal
 
 ### Individual Collection data level annotations
 
-- [AsthmaHealthFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/AsthmaHealthFileAnnotations.R) - Data level annotations for [Asthma Mobile Health Study](https://www.synapse.org/#!Synapse:syn8361748/)
+- [AsthmaHealthFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/AsthmaHealthFileAnnotations.R) - Data level annotations for [Asthma Mobile Health Study](https://www.synapse.org/#!Synapse:syn8361748/)
 
-- [BrightenStudyFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/BrightenStudyFileAnnotations.R) - Data level annotations for [Brighten Study](https://www.synapse.org/#!Synapse:syn10848316/)
+- [BrightenStudyFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/BrightenStudyFileAnnotations.R) - Data level annotations for [Brighten Study](https://www.synapse.org/#!Synapse:syn10848316/)
 
-- [elevateMSFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/elevateMSFileAnnotations.R) - Data level annotations for [elevateMS Study](https://www.synapse.org/#!Synapse:syn21140362/)
+- [elevateMSFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/elevateMSFileAnnotations.R) - Data level annotations for [elevateMS Study](https://www.synapse.org/#!Synapse:syn21140362/)
 
-- [HeartSnapshotFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/HeartSnapshotFileAnnotations.R) - Data level annotations for [Heart Snapshot Study](https://www.synapse.org/#!Synapse:syn22107959/)
+- [HeartSnapshotFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/HeartSnapshotFileAnnotations.R) - Data level annotations for [Heart Snapshot Study](https://www.synapse.org/#!Synapse:syn22107959/)
 
-- [MyHeartCountsFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/MyHeartCountsFileAnnotations.R) - Data level annotations for [MyHeart Counts Cardiovascular Health Study](https://www.synapse.org/#!Synapse:syn11269541/)
+- [MyHeartCountsFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/MyHeartCountsFileAnnotations.R) - Data level annotations for [MyHeart Counts Cardiovascular Health Study](https://www.synapse.org/#!Synapse:syn11269541/)
 
-- [MJFFLdopaFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/MJFFLdopaFileAnnotations.R) - Data level annotations for [MJFF Levodopa Response Study](https://www.synapse.org/#!Synapse:syn20681023/)
+- [MJFFLdopaFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/MJFFLdopaFileAnnotations.R) - Data level annotations for [MJFF Levodopa Response Study](https://www.synapse.org/#!Synapse:syn20681023/)
 
-- [MoleMapperFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/MoleMapperFileAnnotations.R) - Data level annotations for [Mole Mapper Study](https://www.synapse.org/#!Synapse:syn5576734/)
+- [MoleMapperFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/MoleMapperFileAnnotations.R) - Data level annotations for [Mole Mapper Study](https://www.synapse.org/#!Synapse:syn5576734/)
 
-- [mPowerFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/mPowerFileAnnotations.R) - Data level annotations for [mPower Mobile Parkinson Disease Study](https://www.synapse.org/#!Synapse:syn4993293/)
+- [mPowerFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/mPowerFileAnnotations.R) - Data level annotations for [mPower Mobile Parkinson Disease Study](https://www.synapse.org/#!Synapse:syn4993293/)
 
-- [ParticipantRetentionFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/ParticipantRetentionFileAnnotations.R) - Data level annotations for [Participant Retention in Digital Health Studies](https://www.synapse.org/#!Synapse:syn20715364/)
+- [mPowerRerunFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/mPowerRerunFileAnnotations.R) - Data level annotations for [mPower Rerun project](https://www.synapse.org/#!Synapse:syn23277418/)
 
-- [SleepHealthFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/SleepHealthFileAnnotations.R) - Data level annotations for [SleepHealth Mobile App Study](https://www.synapse.org/#!Synapse:syn18492837/) 
+
+- [ParticipantRetentionFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/ParticipantRetentionFileAnnotations.R) - Data level annotations for [Participant Retention in Digital Health Studies](https://www.synapse.org/#!Synapse:syn20715364/)
+
+- [SleepHealthFileAnnotations.R](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Collections%20File%20Level%20Annotations/SleepHealthFileAnnotations.R) - Data level annotations for [SleepHealth Mobile App Study](https://www.synapse.org/#!Synapse:syn18492837/) 
 
 # Annotations
 For current working list of annotations see [Digital Health Annotation Schema.csv](https://github.com/Sage-Bionetworks/digital-health-portal/blob/master/Digital%20Health%20Annotation%20Schema.csv)
