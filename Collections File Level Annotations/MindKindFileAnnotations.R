@@ -8,11 +8,9 @@
 # Notes, Ideas, To-Dos
 ##############
 ### Note:
-## To successfully run this code, you need write permissions to syn8717496
+## To successfully run this code, you need write permissions to syn26067631
 #
 # Using https://docs.google.com/document/d/19VZ0dWVzFBnWj11xSU0seiFU0pFpVkRK/edit as list of annotations
-#
-#
 #
 
 ##############
