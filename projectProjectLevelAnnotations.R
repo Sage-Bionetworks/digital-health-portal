@@ -87,6 +87,10 @@ heartsnapshoturl = paste('[Heart Snapshot Study](/Explore/Collections/DetailsPag
                          URLencode('Heart Snapshot Study', reserved = FALSE, repeated = FALSE),
                          ')', sep = "")
 
+mindkindurl = paste('[MindKind Study](/Explore/Collections/DetailsPage?study=',
+                         URLencode('MindKind Study', reserved = FALSE, repeated = FALSE),
+                         ')', sep = "")
+
 ## Projects
 participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Collections/DetailsPage?study=',
                                 URLencode('Participant Retention in Digital Health Studies', reserved = FALSE, repeated = FALSE),
@@ -95,6 +99,13 @@ participantretentionurl = paste('[Participant Retention in Digital Health Studie
 pddbdreamurl = paste('[Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge](/Explore/Collections/DetailsPage?study=',
                      URLencode('Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge', reserved = FALSE, repeated = FALSE),
                      ')', sep = "")
+
+
+beatpddreamurl = paste('[BEAT-PD DREAM Challenge](/Explore/Collections/DetailsPage?study=',
+                       URLencode('BEAT-PD DREAM Challenge', reserved = FALSE, repeated = FALSE),
+                       ')', sep = "")
+
+
 
 ##############
 # List of projects and related annotations
@@ -157,7 +168,30 @@ projects.annotations <- list(
 #                    externalDataUsed = c('[Phendo](http://citizenendo.org/phendo/)', '[START](https://www.goodrx.com/)'),
                     studyDescription = "Analysis of participant engagement from 8 remote, app-based studies including more than 100,000 participants.",
                     dataAccessInstructions = 'syn20715364/wiki/596144',
+                    isDHProject='TRUE'),
+
+## BEAT-PD DREAM Challenge 
+'syn20825169' = list(consortium = 'mHealth',
+                    collectionType = 'Challenge',
+                    study = 'BEAT-PD DREAM Challenge',
+                    dataCollectionMethod= c('passive', 'patient reported outcome'),
+                    deviceType = c('handheld', 'wearable'),
+                    sensorType = c('accelerometer', 'gyroscope'),
+                    devicePlatform = c('Android', 'iOS'), 
+                    deviceLocation = c('wrist', 'pocket'),
+                    diagnosis=  c("Parkinson's disease"), 
+                    reportedOutcome =c('MDS-UPDRS', 'tremor', 'dyskinesia',
+                                       'medication report'),
+                    # investigator= '',
+                    resourceType = c('analysis', 'challenge'),
+                    keywords = c('neurodegeneration', 'neurology', "Parkinson's", 'DREAM Challenge'),
+                    dhPortalIndex = 'TRUE', # Change after filling annotations
+                    studyDescriptionLocation = 'syn20825169/wiki/596118', 
+#                    dataUsed = c(),
+                    studyDescription = "The Biomarker & Endpoints to Track Parkinson's Disease (BEAT-PD) DREAM Challenge was a first of its kind challenge, designed to assess whether passively collected mobile sensor data could be used to predict Parkinson's Disease symptom severity.",
+                    # dataAccessInstructions = '',
                     isDHProject='TRUE')
+
 )
 
 
