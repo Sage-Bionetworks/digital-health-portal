@@ -183,7 +183,7 @@ projects.annotations <- list(
                        # intervention = '',
                        keywords = c('cardiorespiratory fitness', 'physical activity',
                                     'heart rate'),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn22107959', 
                        studyDataDescriptionLocation = 'syn22107959/wiki/605543',
                        studyDescription = 'Heart Snapshot is a validation study for smartphone based measurement of VO2 max in clinical and real world settings',
@@ -325,7 +325,7 @@ projects.annotations <- list(
   
   ## mPower Study (Rerun Analysis)
   'syn23277418' = list(consortium = 'mHealth',
-                       collectionType = 'Observational Study',
+                       collectionType = 'Analysis',
                        study = 'mPower - Features, model and analysis for Omberg et al (2021)',
                        dataCollectionMethod= c('active', 
                                                'patient reported outcome',
@@ -346,11 +346,48 @@ projects.annotations <- list(
                        sensorDataType = c('raw', 'processed'),
                        investigator= c('Sage Bionetworks'),
                        keywords = c('neurodegeneration', 'neurology', "Parkinson's"),
-                       dhPortalIndex = 'FALSE', # Change after filling annotations
+                       dhPortalIndex = 'TRUE', # Change after filling annotations
                        studyDescriptionLocation = 'syn23277418', 
                        studyDataDescriptionLocation = 'syn23277418/wiki/607307',
                        studyDescription = 'This project represents the outputs and intermediate results of the analysis presented in mPower Nature Biotech Submission.',
-                       dataAccessInstructions = 'syn23277418/wiki/607032')
+                       dataAccessInstructions = 'syn23277418/wiki/607032'),
+  
+  
+  ## MindKind Study
+  'syn26067631' = list(consortium = 'mHealth',
+                       collectionType = 'Observational Study',
+                       study = 'MindKind Study',
+                       numberParticipants= as.integer(6739), 
+                       dataCollectionMethod= c('active', 'patient reported outcome'),
+                       deviceType = c('handheld'),
+                       sensorType = c('touchscreen'),
+                       devicePlatform = c('Android'), 
+                       deviceLocation = c('hand'),
+                       diagnosis=  c('control'), 
+                       reportedOutcome =c("demographics survey", "USDA Food insecurity survey",                       
+                          "PhenX Neighborhood Safety survey", "PhenX Collective Efficacy survey",                 
+                          "exposure to violence survey", "habits survey", "physical activity",                                 
+                          "phone usage", "WHODAS", "PHQ-9", "GAD-7", "mental health history",                             
+                          "mood", "International Physical Activity Questionnaire",     
+                          "activity report","Behavioural Activation for Depression Scale (BADS)",
+                          "sleep report", "Insomnia Severity Index", "UCLA Loneliness Scale",                             
+                          "feedback survey","informed consent", "data governance preferences" ),
+                       digitalAssessmentCategory= c('sleep', 'mood', 'participant engagement',
+                                                    'physical activity', 'mental health',
+                                                    "social activity", "positive activities"),
+                       # digitalAssessmentDetails = c(''),
+                       # sensorDataType = 'raw',
+                       investigator= c('MindKind Consortium'),
+                       resourceType = c('curatedData'),
+                       # intervention = '',
+                       keywords = c('psychology', 'mental health', 'depression', 'anxiety', 
+                                    'lived experience', 'active ingredients'),
+                       dhPortalIndex = 'TRUE', 
+                       studyDescriptionLocation = 'syn26067631', 
+                       studyDataDescriptionLocation = 'syn26067631/wiki/621692',
+                       studyDescription = 'The MindKind study was commissioned by the Mental Health Priority Area at Wellcome Trust to understand the data governance and engagement strategies influencing young peoples’ (aged 16-24) participation in app-based studies of mental health. The study hypothesized that willingness to participate in research is influenced by involvement in how their data is collected, shared, and used. It employed mixed methods to understand the feasibility of global, smartphone-based studies of youth mental health.',
+                       dataAccessInstructions = 'syn26067631/wiki/621690')
+  
 )
 
 ##############

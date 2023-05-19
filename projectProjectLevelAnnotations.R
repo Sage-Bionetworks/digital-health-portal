@@ -87,6 +87,10 @@ heartsnapshoturl = paste('[Heart Snapshot Study](/Explore/Collections/DetailsPag
                          URLencode('Heart Snapshot Study', reserved = FALSE, repeated = FALSE),
                          ')', sep = "")
 
+mindkindurl = paste('[MindKind Study](/Explore/Collections/DetailsPage?study=',
+                         URLencode('MindKind Study', reserved = FALSE, repeated = FALSE),
+                         ')', sep = "")
+
 ## Projects
 participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Collections/DetailsPage?study=',
                                 URLencode('Participant Retention in Digital Health Studies', reserved = FALSE, repeated = FALSE),
