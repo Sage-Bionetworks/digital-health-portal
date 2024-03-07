@@ -352,25 +352,25 @@ projects.annotations <- list(
                        studyDescription = 'This project represents the outputs and intermediate results of the analysis presented in mPower Nature Biotech Submission.',
                        dataAccessInstructions = 'syn23277418/wiki/607032'),
 
-  
+
   ## MindKind Study
   'syn26067631' = list(consortium = 'mHealth',
                        collectionType = 'Observational Study',
                        study = 'MindKind Study',
-                       numberParticipants= as.integer(6739), 
+                       numberParticipants= as.integer(6739),
                        dataCollectionMethod= c('active', 'patient reported outcome'),
                        deviceType = c('handheld'),
                        sensorType = c('touchscreen'),
-                       devicePlatform = c('Android'), 
+                       devicePlatform = c('Android'),
                        deviceLocation = c('hand'),
-                       diagnosis=  c('control'), 
-                       reportedOutcome =c("demographics survey", "USDA Food insecurity survey",                       
-                          "PhenX Neighborhood Safety survey", "PhenX Collective Efficacy survey",                 
-                          "exposure to violence survey", "habits survey", "physical activity",                                 
-                          "phone usage", "WHODAS", "PHQ-9", "GAD-7", "mental health history",                             
-                          "mood", "International Physical Activity Questionnaire",     
+                       diagnosis=  c('control'),
+                       reportedOutcome =c("demographics survey", "USDA Food insecurity survey",
+                          "PhenX Neighborhood Safety survey", "PhenX Collective Efficacy survey",
+                          "exposure to violence survey", "habits survey", "physical activity",
+                          "phone usage", "WHODAS", "PHQ-9", "GAD-7", "mental health history",
+                          "mood", "International Physical Activity Questionnaire",
                           "activity report","Behavioural Activation for Depression Scale (BADS)",
-                          "sleep report", "Insomnia Severity Index", "UCLA Loneliness Scale",                             
+                          "sleep report", "Insomnia Severity Index", "UCLA Loneliness Scale",
                           "feedback survey","informed consent", "data governance preferences" ),
                        digitalAssessmentCategory= c('sleep', 'mood', 'participant engagement',
                                                     'physical activity', 'mental health',
@@ -380,15 +380,44 @@ projects.annotations <- list(
                        investigator= c('MindKind Consortium'),
                        resourceType = c('curatedData'),
                        # intervention = '',
-                       keywords = c('psychology', 'mental health', 'depression', 'anxiety', 
+                       keywords = c('psychology', 'mental health', 'depression', 'anxiety',
                                     'lived experience', 'active ingredients'),
-                       dhPortalIndex = 'TRUE', 
-                       studyDescriptionLocation = 'syn26067631', 
+                       dhPortalIndex = 'TRUE',
+                       studyDescriptionLocation = 'syn26067631',
                        studyDataDescriptionLocation = 'syn26067631/wiki/621692',
                        studyDescription = 'The MindKind study was commissioned by the Mental Health Priority Area at Wellcome Trust to understand the data governance and engagement strategies influencing young peoples’ (aged 16-24) participation in app-based studies of mental health. The study hypothesized that willingness to participate in research is influenced by input into how their data is collected, shared, and used. It employed mixed methods to understand the feasibility of global, smartphone-based studies of youth mental health.',
-                       dataAccessInstructions = 'syn26067631/wiki/621690')
+                       dataAccessInstructions = 'syn26067631/wiki/621690'),
   
-)
+  ## MESA
+  'syn53711082' = list(consortium = 'mHealth',
+                      collectionType = 'Observational Study',
+                      study = 'Multi-Ethnic Study of Atherosclerosis (MESA) Sleep Study',
+                      numberParticipants= as.integer(2237), 
+                      dataCollectionMethod= c('passive', 'patient reported outcome',
+                                              'clinical assessment'),
+                      deviceType = c('wearable'),
+                      sensorType = c('accelerometer', 'light sensor',
+                                     'polysomnography'),
+                      devicePlatform = c('Philips Respironics', 
+                                      'Computmedics Ltd.'),
+                      deviceLocation = c('wrist', 'various'),
+                      diagnosis=  c('control'),
+                      reportedOutcome = c('sleep questionnaire'),
+                      digitalAssessmentCategory= c('sleep'),
+                      digitalAssessmentDetails = c('sleep scoring', 'heart rate variability'),
+                      sensorDataType = c('raw', 'processed'),
+                      investigator= c('The MESA Consortium', "NHLBI"),
+                      resourceType = 'curatedData',
+                      # intervention = '',
+                      keywords = c('sleep', 'cardiovascular disease'),
+                      dhPortalIndex = 'TRUE', # Change after filling annotations
+                      studyDescriptionLocation = 'syn53711082',
+                      studyDataDescriptionLocation = 'syn53711082/wiki/626337',
+                      studyDescription = 'The objectives of the MESA Sleep Study are to understand how variations in sleep and sleep disorders vary across gender and ethnic groups and relate to measures of subclinical atherosclerosis. Sleep Exam (MESA Sleep) which included full overnight unattended polysomnography, 7-day wrist-worn actigraphy, and a sleep questionnaire.',
+                      dataAccessInstructions = 'syn53711082/wiki/626338')
+  
+  
+  )
 
 ##############
 # Update Annotations in Synapse
@@ -398,7 +427,10 @@ projects.list <- names(projects.annotations)
 for(proj.id in projects.list){
   
   #### Uncomment this before updating for real
- synSetAnnotations(proj.id, annotations = projects.annotations[[proj.id]])
+# synSetAnnotations(proj.id, annotations = projects.annotations[[proj.id]])
+  proj<-synGet(proj.id)
+  proj$annotations<-projects.annotations[[proj.id]]
+  proj<-synStore(proj)
   ####
   
   print(proj.id)
