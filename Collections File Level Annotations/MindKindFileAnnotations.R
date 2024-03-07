@@ -148,7 +148,7 @@ files.annotations = list(
                      diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('USDA Food insecurity survey',
                                         'PhenX Neighborhood Safety survey',
-                                        'PhenX Collective Efficacy survey',
+                                        'PhenX Neighborhood Collective Efficacy survey',
                                         'exposure to violence survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
