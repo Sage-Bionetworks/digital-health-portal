@@ -835,30 +835,6 @@ publications.list <- list(
     publicationType = 'study'
   ),
 
-  #### MindKind Engagement
-  # 2
-  "MindKind_WellcomeOpenRes_2023" = list(
-    Author = c('Sieberts SK', 'Burn AM', 'Carey EG et al.'),
-    Title = "Targeted recruitment and the role of choice in the engagement of youth in a randomised smartphone-based mental health study in India, South Africa, and the UK: results from the MindKind Study",
-    Journal = 'Wellcome Open Research',
-#    PMID = '35686088',
-    #    ISSN = '2398-6352',
-    Year = as.integer(2023),
-    doi = '10.12688/wellcomeopenres.19383.1',
-    url = 'https://doi.org/10.12688/wellcomeopenres.19383.1',
-    Abstract = "Background: The global ubiquity of smartphone use among young people makes them excellent candidates for collecting data about individuals’ lived experiences and their relationships to mental health. However, to-date most app-based studies have been conducted in North America and Europe. Understanding young people’s willingness to participate in app-based research and share information about their mental health is key to understanding the feasibility of broad-scale research using these approaches. We aimed to understand the recruitment and engagement approaches influencing young peoples’ (aged 16-24) participation in app-based studies of mental health. We hypothesised that providing a choice of study topics will improve engagement. Methods: We developed a 12-week pilot study of mental health implemented in the MindKind app, designed to assess participants’ willingness to engage in remote mental health research, both actively and passively. Enrollees were randomised to one of two different engagement arms, either selecting their study topics of interest or receiving a fixed assignment of study topics, in order to understand the role of choice in study engagement. This pilot study was conducted in India, South Africa, and the United Kingdom. Different recruitment strategies were employed in each location. Results: The MindKind Study recruited 1,034 (India), 932 (South Africa) and 1,609 (UK) participants. Engagement differed by country with median days of activity = 2, 6, and 11 for India, South Africa, and UK, respectively. Most surprisingly, participants given a choice of study topics showed lower engagement relative to participants assigned to fixed topics (Hazard Ratio = 0.82). Conclusions: We observe equal or better engagement compared to previous comparable app-based studies of mental health. While providing participants a choice of study topics showed no advantage in our study, our qualitative analysis of participant feedback provides additional suggestions for improving engagement in future studies.",
-    Consortium = 'mHealth',
-    Study = 'MindKind Study',
-    Diagnosis = c("control"),
-    digitalAssessmentCategory= c('sleep', 'mood', 'participant engagement',
-                                 'physical activity', 'mental health',
-                                 "social activity", "positive activities"),
-    sensorType = c('touchscreen'),
-    synID = 'syn26067631',
-    Featured = 'TRUE',
-    studyOrProject = mindkindurl,
-    publicationType = 'study'
-  ),
 
 #### MindKind Engagement
 # 2
