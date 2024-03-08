@@ -69,6 +69,16 @@ heartsnapshoturl = paste('[Heart Snapshot Study](/Explore/Studies/DetailsPage?st
                          URLencode('Heart Snapshot Study', reserved = FALSE, repeated = FALSE),
                          ')', sep = "")
 
+
+mindkindurl = paste("[MindKind Study](/Explore/Collections/DetailsPage?study=",
+                    URLencode('MindKind Study',  reserved = FALSE, repeated = FALSE), 
+                    ")", sep = "")
+
+mesaurl = paste("[Multi-Ethnic Study of Atherosclerosis (MESA) Sleep Study](/Explore/Collections/DetailsPage?study=",
+                URLencode('Multi-Ethnic Study of Atherosclerosis (MESA) Sleep Study',  reserved = FALSE, repeated = FALSE), 
+                ")", sep = "")
+
+
 ## Projects
 participantretentionurl = paste('[Participant Retention in Digital Health Studies](/Explore/Projects/DetailsPage?study=',
                                      URLencode('Participant Retention in Digital Health Studies', reserved = FALSE, repeated = FALSE),
@@ -77,6 +87,15 @@ participantretentionurl = paste('[Participant Retention in Digital Health Studie
 pddbdreamurl = paste('[Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge](/Explore/Projects/DetailsPage?study=',
                      URLencode('Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge', reserved = FALSE, repeated = FALSE),
                      ')', sep = "")
+
+codatburl = paste('[CODA TB DREAM Challenge](/Explore/Collections/DetailsPage?study=',
+                  URLencode('CODA TB DREAM Challenge', reserved = FALSE, repeated = FALSE),
+                  ')', sep = "")
+
+beatpddreamurl = paste('[BEAT-PD DREAM Challenge](/Explore/Collections/DetailsPage?study=',
+                       URLencode('BEAT-PD DREAM Challenge', reserved = FALSE, repeated = FALSE),
+                       ')', sep = "")
+
 
 # Project Synapse ID vs publications
 publications.list <- list(
@@ -109,7 +128,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 2
   "Neto_npjDigiMed_2019" = list(
     Author = c('Neto EC', 'Pratap A', 'Perumal TM',
@@ -137,7 +156,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 3
   "Neto_arXiv_2019" = list(
     Author = c('Neto EC','Tummalacherla M',
@@ -163,7 +182,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 4
   "Perumal_Ubicomp_2018" = list(
     Author = c('Perumal TM', 'Tummalacherla M',
@@ -190,7 +209,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 5
   "Doerr_JMIRmHealth_2017" = list(
     Author = c('Doerr M', 'Truong AM','Bot BM',
@@ -215,7 +234,7 @@ publications.list <- list(
     Featured = 'TRUE',
     studyOrProject = mpowerurl,
     publicationType = 'study'),
-  
+
   # 6
   "Wilbanks_NatBioTech_2016" = list(
     Author = c('Wilbanks J', 'Friend SH'),
@@ -240,7 +259,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 7
   "Trister_npjParkinsons_2016" = list(
     Author = c('Trister AD', 'Dorsey ER', 'Friend SH'),
@@ -265,7 +284,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 8
   "Neto_arXiv_2017_Jun" = list(
     Author = c('Neto EC', 'Perumal TM',
@@ -291,7 +310,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 9
   "Neto_arXiv_2017_Dec" = list(
     Author = c('Neto EC', 'Pratap A',
@@ -319,7 +338,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 10
   "Neto_arXiv_2018" = list(
     Author = c('Neto EC', 'Pratap A',
@@ -346,7 +365,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 11
   "Neto_KDD_2019" = list(
     Author = c('Neto EC', 'Pratap A',
@@ -373,7 +392,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   # 12
   "Neto_PacBio_2016" = list(
     Author = c('Neto EC', 'Bot BM', 'Perumal TM',
@@ -400,7 +419,7 @@ publications.list <- list(
     studyOrProject = mpowerurl,
     publicationType = 'study'
   ),
-  
+
   #### mpower rerun project
   "Omberg_NatBioTech_2021" = list(
     Author = c('Omberg L', 'Neto EC', 'Perumal TM', 'Pratap A',
@@ -418,15 +437,19 @@ publications.list <- list(
     Abstract = 'Remote health assessments that gather real-world data (RWD) outside clinic settings require a clear understanding of appropriate methods for data collection, quality assessment, analysis and interpretation. Here we examine the performance and limitations of smartphones in collecting RWD in the remote mPower observational study of Parkinson\'s disease (PD). Within the first 6 months of study commencement, 960 participants had enrolled and performed at least five self-administered active PD symptom assessments (speeded tapping, gait/balance, phonation or memory). Task performance, especially speeded tapping, was predictive of self-reported PD status (area under the receiver operating characteristic curve (AUC) = 0.8) and correlated with in-clinic evaluation of disease severity (r = 0.71; P < 1.8 × 10-6) when compared with motor Movement Disorder Society-Unified Parkinson\'s Disease Rating Scale (MDS-UPDRS). Although remote assessment requires careful consideration for accurate interpretation of RWD, our results support the use of smartphones and wearables in objective and personalized disease assessments.',
     Consortium = 'mHealth',
     Study = 'mPower - Features, model and analysis for Omberg et al (2021)',
-    # Diagnosis = c(''),
-    # digitalAssessmentCategory = c(''),
-    # sensorType = c(''),
+    Diagnosis = c("Parkinson's disease", "control"),
+    digitalAssessmentCategory = c('resting tremor', 'kinetic tremor',
+                                  'postural tremor','action tremor',
+                                  'gait', 'voice'),
+    sensorType = c('accelerometer', 'gyroscope', 'magnetometer',
+                   'touchscreen', 'microphone'),
+
     synID = 'syn23277418',
     Featured = 'TRUE',
     studyOrProject = mpowerrerunurl,
-    publicationType = 'study'
+    publicationType = 'project'
     ),
-  
+
   #### Asthma Mobile Health Study
   # 1
   "Chan_NatBioTech_2017" = list(
@@ -451,7 +474,7 @@ publications.list <- list(
     studyOrProject = asthmaurl,
     publicationType = 'study'
   ),
-  
+
   # 2
   "Chan_NatSciData_2018" = list(
     Author = c('Chan YF', 'Bot BM', 'Zweig M',
@@ -475,7 +498,7 @@ publications.list <- list(
     studyOrProject = asthmaurl,
     publicationType = 'study'
   ),
-  
+
   #### Mole Mapper Study
   # 1
   "Webster_NatSciData_2017" = list(
@@ -500,7 +523,7 @@ publications.list <- list(
     studyOrProject = molemapperurl,
     publicationType = 'study'
   ),
-  
+
   # 2
   "Petri_SemCutMedSur_2019" = list(
     Author = c('Petrie T', 'Samatham R',
@@ -523,7 +546,7 @@ publications.list <- list(
     studyOrProject = molemapperurl,
     publicationType = 'study'
   ),
-  
+
   #### My Heart Counts
   # 1
   "Hershman_NatSciData_2019" = list(
@@ -548,7 +571,7 @@ publications.list <- list(
     studyOrProject = myhearturl,
     publicationType = 'study'
   ),
-  
+
   # 2
   "McConnell_JAMACardio_2019" = list(
     Author = c('McConnell MV', 'Shcherbina A', 'Pavlovic A',
@@ -573,7 +596,7 @@ publications.list <- list(
     studyOrProject = myhearturl,
     publicationType = 'study'
   ),
-  
+
   #### Brighten Study
   # 1
   "Pratap_DepAnx_2018" = list(
@@ -598,7 +621,7 @@ publications.list <- list(
     studyOrProject = brightenurl,
     publicationType = 'study'
   ),
-  
+
   # 2
   "Renn_MHPA_2018" = list(
     Author = c('Renn BN', 'Pratap A', 'Atkins DC',
@@ -622,7 +645,7 @@ publications.list <- list(
     studyOrProject = brightenurl,
     publicationType = 'study'
   ),
-  
+
   # 3
   "Pratap_JMIR_2018" = list(
     Author = c('Pratap A', 'Renn BN', 'Volponi J',
@@ -646,7 +669,7 @@ publications.list <- list(
     studyOrProject = brightenurl,
     publicationType = 'study'
   ),
-  
+
   # 4
   "Anguera_BMJInnov_2016" = list(
     Author = c('Anguera JA', 'Jordan JT', 'Castaneda D',
@@ -670,7 +693,7 @@ publications.list <- list(
     studyOrProject = brightenurl,
     publicationType = 'study'
   ),
-  
+
   # 5
   "Arean_JMIR_2016" = list(
     Author = c('Arean PA', 'Hallgren KA', 'Jordan JT',
@@ -694,7 +717,7 @@ publications.list <- list(
     studyOrProject = brightenurl,
     publicationType = 'study'
   ),
-  
+
   #### Participant Retention Study
   # 1
   "Pratap_npjDigiMed_2020" = list(
@@ -720,8 +743,8 @@ publications.list <- list(
     studyOrProject = participantretentionurl,
     publicationType = 'project'
   ),
-  
-  #### Parkinsons Disease Digital Biomarker DREAM Challenge 
+
+  #### Parkinsons Disease Digital Biomarker DREAM Challenge
   # 1
   "Sieberts_npjDigiMed_2021" = list(
     Author = c('Sieberts SK', 'Schaff J', 'Duda M',
@@ -758,8 +781,143 @@ publications.list <- list(
     studyOrProject = pddbdreamurl,
     publicationType = 'project'
   ),
+
+  #### BEAT-PD DREAM Challenge 
+  # 1
+  "Sieberts_PLOSDigitHealth_2023" = list(
+    Author = c('Sieberts SK', 'Borzymowski H', 'Guan Y', 'Huang Y', 'Matzner A', 'Page A', 'Bar-Gad I', 'Beaulieu-Jones B', 'El-Hanani Y', 
+               'Goschenhofer J', 'Javidnia M', 'Keller MS', 'Li YC', 'Saqib M', 
+               'Smith G', 'Stanescu A', 'Venuto CS', 'Zielinski R', 
+               'BEAT-PD DREAM Challenge Consortium', 'Jayaraman A', 'Evers LJW', 
+               'Foschini L', 'Mariakakis A', 'Pandey G', 'Shawen N', 'Synder P', 
+               'Omberg L'),
+    Title = "Developing better digital health measures of Parkinson's disease using free living data and a crowdsourced data analysis challenge",
+    Journal = 'PLOS Digital Health',
+    PMID = '36976789',
+#    ISSN = '2398-6352',
+    Year = as.integer(2023),
+    doi = '10.1371/journal.pdig.0000208',
+    url = 'https://doi.org/10.1371/journal.pdig.0000208',
+    Abstract = "One of the promising opportunities of digital health is its potential to lead to more holistic understandings of diseases by interacting with the daily life of patients and through the collection of large amounts of real-world data. Validating and benchmarking indicators of disease severity in the home setting is difficult, however, given the large number of confounders present in the real world and the challenges in collecting ground truth data in the home. Here we leverage two datasets collected from patients with Parkinson's disease, which couples continuous wrist-worn accelerometer data with frequent symptom reports in the home setting, to develop digital biomarkers of symptom severity. Using these data, we performed a public benchmarking challenge in which participants were asked to build measures of severity across 3 symptoms (on/off medication, dyskinesia, and tremor). 42 teams participated and performance was improved over baseline models for each subchallenge. Additional ensemble modeling across submissions further improved performance, and the top models validated in a subset of patients whose symptoms were observed and rated by trained clinicians.",
+    Consortium = 'mHealth',
+    Study = 'BEAT-PD DREAM Challenge',
+    Diagnosis = c("Parkinson's disease", "control"),
+#    digitalAssessmentCategory = c('resting tremor', 'action tremor', 'gait'),
+    sensorType = c('accelerometer', 'gyroscope'),
+    synID = 'syn20825169',
+    Featured = 'TRUE',
+    studyOrProject = beatpddreamurl,
+    publicationType = 'project'
+  ),
   
-  #### mHealthtools 
+  #### MindKind Protocol
+  # 1
+  "MindKind_WellcomeOpenRes_2022" = list(
+    Author = c('The MindKind Consortium'),
+    Title = 'MindKind: A mixed-methods protocol for the feasibility of global digital mental health studies in young people',
+    Journal = 'Wellcome Open Research',
+    PMID = '35686088',
+#    ISSN = '2398-6352',
+    Year = as.integer(2022),
+    doi = '10.12688/wellcomeopenres.17167.2',
+    url = 'https://doi.org/10.12688/wellcomeopenres.17167.2',
+    Abstract = "Background: While an estimated 14-20% of young adults experience mental health conditions worldwide, the best strategies for prevention and management are not fully understood. The ubiquity of smartphone use among young people makes them excellent candidates for collecting data about lived experiences and their relationships to mental health. However, not much is known about the factors affecting young peoples' willingness to share information about their mental health. Objective: We aim to understand the data governance and engagement strategies influencing young peoples' (aged 16-24) participation in app-based studies of mental health. We hypothesize that willingness to participate in research is influenced by involvement in how their data is collected, shared, and used. Methods: Here, we describe the MindKind Study, which employs mixed methods to understand the feasibility of global, smartphone-based studies of youth mental health. A pilot 12-week app-based substudy will query participants' willingness to engage with remote mental health studies. Participants will be randomized into one of four different data governance models designed to understand their preferences, as well as the acceptability of models that allow them more or less control over how their data are accessed and used. Enrolees will receive one of two different engagement strategies. A companion qualitative study will employ a deliberative democracy approach to examine the preferences, concerns and expectations of young people, with respect to remote mental health research. We also detail our engagement with young people as co-researchers in this study. This pilot study is being conducted in India, South Africa and the United Kingdom. Conclusions: This study is expected to generate new insights into the feasibility of, and best practices for, remote smartphone-based studies of mental health in youth and represents an important step toward understanding which approaches could help people better manage their mental health.",
+    Consortium = 'mHealth',
+    Study = 'MindKind Study',
+    Diagnosis = c("control"),
+    digitalAssessmentCategory= c('sleep', 'mood', 'participant engagement',
+                             'physical activity', 'mental health',
+                             "social activity", "positive activities"),
+    sensorType = c('touchscreen'),
+    synID = 'syn26067631',
+    Featured = 'TRUE',
+    studyOrProject = mindkindurl,
+    publicationType = 'study'
+  ),
+
+  #### MindKind Engagement
+  # 2
+  "MindKind_WellcomeOpenRes_2023" = list(
+    Author = c('Sieberts SK', 'Burn AM', 'Carey EG et al.'),
+    Title = "Targeted recruitment and the role of choice in the engagement of youth in a randomised smartphone-based mental health study in India, South Africa, and the UK: results from the MindKind Study",
+    Journal = 'Wellcome Open Research',
+#    PMID = '35686088',
+    #    ISSN = '2398-6352',
+    Year = as.integer(2023),
+    doi = '10.12688/wellcomeopenres.19383.1',
+    url = 'https://doi.org/10.12688/wellcomeopenres.19383.1',
+    Abstract = "Background: The global ubiquity of smartphone use among young people makes them excellent candidates for collecting data about individuals’ lived experiences and their relationships to mental health. However, to-date most app-based studies have been conducted in North America and Europe. Understanding young people’s willingness to participate in app-based research and share information about their mental health is key to understanding the feasibility of broad-scale research using these approaches. We aimed to understand the recruitment and engagement approaches influencing young peoples’ (aged 16-24) participation in app-based studies of mental health. We hypothesised that providing a choice of study topics will improve engagement. Methods: We developed a 12-week pilot study of mental health implemented in the MindKind app, designed to assess participants’ willingness to engage in remote mental health research, both actively and passively. Enrollees were randomised to one of two different engagement arms, either selecting their study topics of interest or receiving a fixed assignment of study topics, in order to understand the role of choice in study engagement. This pilot study was conducted in India, South Africa, and the United Kingdom. Different recruitment strategies were employed in each location. Results: The MindKind Study recruited 1,034 (India), 932 (South Africa) and 1,609 (UK) participants. Engagement differed by country with median days of activity = 2, 6, and 11 for India, South Africa, and UK, respectively. Most surprisingly, participants given a choice of study topics showed lower engagement relative to participants assigned to fixed topics (Hazard Ratio = 0.82). Conclusions: We observe equal or better engagement compared to previous comparable app-based studies of mental health. While providing participants a choice of study topics showed no advantage in our study, our qualitative analysis of participant feedback provides additional suggestions for improving engagement in future studies.",
+    Consortium = 'mHealth',
+    Study = 'MindKind Study',
+    Diagnosis = c("control"),
+    digitalAssessmentCategory= c('sleep', 'mood', 'participant engagement',
+                                 'physical activity', 'mental health',
+                                 "social activity", "positive activities"),
+    sensorType = c('touchscreen'),
+    synID = 'syn26067631',
+    Featured = 'TRUE',
+    studyOrProject = mindkindurl,
+    publicationType = 'study'
+  ),
+
+#### MindKind Engagement
+# 2
+"Sieberts_WellcomeOpenRes_2023" = list(
+  Author = c('Sieberts SK', 'Burn AM', 'Carey EG et al.'),
+  Title = "Targeted recruitment and the role of choice in the engagement of youth in a randomised smartphone-based mental health study in India, South Africa, and the UK: results from the MindKind Study",
+  Journal = 'Wellcome Open Research',
+  #    PMID = '35686088',
+  #    ISSN = '2398-6352',
+  Year = as.integer(2023),
+  doi = '10.12688/wellcomeopenres.19383.1',
+  url = 'https://doi.org/10.12688/wellcomeopenres.19383.1',
+  Abstract = "Background: The global ubiquity of smartphone use among young people makes them excellent candidates for collecting data about individuals’ lived experiences and their relationships to mental health. However, to-date most app-based studies have been conducted in North America and Europe. Understanding young people’s willingness to participate in app-based research and share information about their mental health is key to understanding the feasibility of broad-scale research using these approaches. We aimed to understand the recruitment and engagement approaches influencing young peoples’ (aged 16-24) participation in app-based studies of mental health. We hypothesised that providing a choice of study topics will improve engagement. Methods: We developed a 12-week pilot study of mental health implemented in the MindKind app, designed to assess participants’ willingness to engage in remote mental health research, both actively and passively. Enrollees were randomised to one of two different engagement arms, either selecting their study topics of interest or receiving a fixed assignment of study topics, in order to understand the role of choice in study engagement. This pilot study was conducted in India, South Africa, and the United Kingdom. Different recruitment strategies were employed in each location. Results: The MindKind Study recruited 1,034 (India), 932 (South Africa) and 1,609 (UK) participants. Engagement differed by country with median days of activity = 2, 6, and 11 for India, South Africa, and UK, respectively. Most surprisingly, participants given a choice of study topics showed lower engagement relative to participants assigned to fixed topics (Hazard Ratio = 0.82). Conclusions: We observe equal or better engagement compared to previous comparable app-based studies of mental health. While providing participants a choice of study topics showed no advantage in our study, our qualitative analysis of participant feedback provides additional suggestions for improving engagement in future studies.",
+  Consortium = 'mHealth',
+  Study = 'MindKind Study',
+  Diagnosis = c("control"),
+  digitalAssessmentCategory= c('sleep', 'mood', 'participant engagement',
+                               'physical activity', 'mental health',
+                               "social activity", "positive activities"),
+  sensorType = c('touchscreen'),
+  synID = 'syn26067631',
+  Featured = 'TRUE',
+  studyOrProject = mindkindurl,
+  publicationType = 'study'
+),
+
+
+  #### MindKind Engagement
+  # 3
+  "Sieberts_PLOSOne_2023" = list(
+    Author = c('Sieberts SK', 'Marten C', 'Bampton E', 'Bjorling EA', 'Burn AM', 'Carey EG', 'Carlson S', 'Fernandes B', 'Kalha J', 'Lindani S', 'Masomera H', 'Neelakantan L', 'Pasquale L', 'Ranganathan S', 'Scanlan E', 'Shah H', 'Sibisi R', 'Sumant S', 'Suver C', 'Thungana Y', 'Tummalacherla M', 'Velloza J', 'Collins PY', 'Fazel M', 'Ford T', 'Freeman M', 'Pathare S', 'Zingela Z', 'MindKind Consortium', 'Doerr M'),
+    Title = "Young people's data governance preferences for their mental health data: MindKind Study findings from India, South Africa, and the United Kingdom",
+    Journal = 'PLoS One',
+      PMID = '37074995',
+    #    ISSN = '2398-6352',
+    Year = as.integer(2023),
+    doi = '10.1371/journal.pone.0279857',
+    url = 'https://doi.org/10.1371/journal.pone.0279857',
+    Abstract = "Mobile devices offer a scalable opportunity to collect longitudinal data that facilitate advances in mental health treatment to address the burden of mental health conditions in young people. Sharing these data with the research community is critical to gaining maximal value from rich data of this nature. However, the highly personal nature of the data necessitates understanding the conditions under which young people are willing to share them. To answer this question, we developed the MindKind Study, a multinational, mixed methods study that solicits young people’s preferences for how their data are governed and quantifies potential participants’ willingness to join under different conditions. We employed a community-based participatory approach, involving young people as stakeholders and co-researchers. At sites in India, South Africa, and the UK, we enrolled 3575 participants ages 16–24 in the mobile app-mediated quantitative study and 143 participants in the public deliberation-based qualitative study. We found that while youth participants have strong preferences for data governance, these preferences did not translate into (un)willingness to join the smartphone-based study. Participants grappled with the risks and benefits of participation as well as their desire that the “right people” access their data. Throughout the study, we recognized young people’s commitment to finding solutions and co-producing research architectures to allow for more open sharing of mental health data to accelerate and derive maximal benefit from research.",
+    Consortium = 'mHealth',
+    Study = 'MindKind Study',
+    Diagnosis = c("control"),
+    digitalAssessmentCategory= c('sleep', 'mood', 'participant engagement',
+                                 'physical activity', 'mental health',
+                                 "social activity", "positive activities"),
+    sensorType = c('touchscreen'),
+    synID = 'syn26067631',
+    Featured = 'TRUE',
+    studyOrProject = mindkindurl,
+    publicationType = 'study'
+  ),
+
+
+
+
+
+
+    
+  #### mHealthtools
   # 1
   "Snyder_JOSS_2020" = list(
     Author = c('Snyder P', 'Tummalacherla M', 'Perumal T', 'Omberg L'),
@@ -777,14 +935,14 @@ publications.list <- list(
     # digitalAssessmentCategory = '',
     sensorType = c('accelerometer', 'gyroscope', 'camera', 'touchscreen'),
     # synID = '',
-    Featured = 'TRUE', 
+    Featured = 'TRUE',
     publicationType = 'tool'
   ),
-  
-  #### elevateMS 
+
+  #### elevateMS
   # 1
   "Pratap_JMIRmHealth_2020" = list(
-    Author = c('Pratap A', 'Grant D', 'Vegesna A', 
+    Author = c('Pratap A', 'Grant D', 'Vegesna A',
                'Tummalacherla M', 'Cohan S', 'Deshpande C',
                'Mangravite L', 'Omberg L' ),
     Title = 'Evaluating the Utility of Smartphone-Based Sensor Assessments in Persons With Multiple Sclerosis in the Real-World Using an App (elevateMS): Observational, Prospective Pilot Digital Health Study',
@@ -832,14 +990,13 @@ for(publication in publications.names){
   curr_wiki <- Wiki(owner=publication_entity$properties$id,
                     title="Abstract",
                     markdown=curr_wiki_text)
-  curr_wiki <- synStore(curr_wiki)
+#  curr_wiki <- synStore(curr_wiki)
   
   # Set Annotations
   curr_annotations$Abstract <- publication_entity$properties$id
   # making abstract location set to synapse file instead of wiki
-  synSetAnnotations(publication_entity$properties$id,
-                    annotations = curr_annotations)
-  
+  publication_entity$annotations<-curr_annotations
+  publication_entity<-synStore(publication_entity)
   
   ####
   
