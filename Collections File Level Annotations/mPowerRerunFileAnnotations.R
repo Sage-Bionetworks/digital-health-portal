@@ -41,7 +41,7 @@ tables.annotations <- list(
                          sensorType = c('accelerometer', 'gyroscope', 'magnetometer', "microphone"),
                          devicePlatform = c('iOS'), 
                          deviceLocation = c('hand', 'pocket', "flat surface"),
-                         diagnosis= c("Parkinson's Disease", 'control'),
+                         diagnosis= c("Parkinson's disease", 'control'),
                          reportedOutcome = c('medication report'),
                          digitalAssessmentCategory= c('gait', 
                                                       'phonation',
@@ -61,7 +61,11 @@ tables.annotations <- list(
 #' store synapse annotation for the table
 tables.list <- names(tables.annotations) %>% 
     purrr::map(., function(synId){
-        synSetAnnotations(synId, annotations = tables.annotations[[synId]])
+#        synSetAnnotations(synId, annotations = tables.annotations[[synId]])
+      proj<-synGet(synId)
+      proj$annotations<-tables.annotations[[synId]]
+      proj<-synStore(proj)
+      
     }
 )
 
@@ -99,7 +103,7 @@ feature_annot_list <- list(
                      sensorType = c('touchscreen'),
                      devicePlatform = c('iOS'), 
                      deviceLocation = c('flat surface'),
-                     diagnosis= c("Parkinson's Disease", 'control'), 
+                     diagnosis= c("Parkinson's disease", 'control'), 
                      reportedOutcome = c('medication report'),
                      digitalAssessmentCategory= c('motor coordination'),
                      digitalAssessmentDetails = c('tapping'),
@@ -117,7 +121,7 @@ feature_annot_list <- list(
                      sensorType = c('accelerometer', 'gyroscope', 'magnetometer'),
                      devicePlatform = c('iOS'), 
                      deviceLocation = c('pocket'),
-                     diagnosis= c("Parkinson's Disease", 'control'),
+                     diagnosis= c("Parkinson's disease", 'control'),
                      reportedOutcome = c('medication report'),
                      digitalAssessmentCategory= c('gait'),
                      digitalAssessmentDetails = c('walking (flat)'),
@@ -135,7 +139,7 @@ feature_annot_list <- list(
                    sensorType = c('microphone'),
                    devicePlatform = c('iOS'), 
                    deviceLocation = c('flat surface', 'hand'),
-                   diagnosis= c("Parkinson's Disease", 'control'), 
+                   diagnosis= c("Parkinson's disease", 'control'), 
                    reportedOutcome = c('medication report'),
                    digitalAssessmentCategory= c('phonation'),
                    digitalAssessmentDetails = c('phonation'),
@@ -152,7 +156,7 @@ feature_annot_list <- list(
                      sensorType = c('accelerometer', 'gyroscope', 'magnetometer'),
                      devicePlatform = c('iOS'), 
                      deviceLocation = c('hand', 'pocket'),
-                     diagnosis= c("Parkinson's Disease", 'control'),
+                     diagnosis= c("Parkinson's disease", 'control'),
                      reportedOutcome = c('medication report'),
                      digitalAssessmentCategory= c('gait'),
                      digitalAssessmentDetails = c('standing'),
@@ -180,7 +184,7 @@ healthcode_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -208,7 +212,7 @@ healthcode_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -236,7 +240,7 @@ healthcode_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -270,7 +274,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -298,7 +302,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -328,7 +332,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -356,7 +360,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -384,7 +388,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -413,7 +417,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -441,7 +445,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -469,7 +473,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -497,7 +501,7 @@ intermediate_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -531,7 +535,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -558,7 +562,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -585,7 +589,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -613,7 +617,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -641,7 +645,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -669,7 +673,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -697,7 +701,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -725,7 +729,7 @@ figure_annot_list <- list(
         devicePlatform = c('iOS'), 
         dataCollectionMethod= c('active'),
         deviceLocation = c('flat surface', 'pocket'),
-        diagnosis= c("Parkinson's Disease", 
+        diagnosis= c("Parkinson's disease", 
                      'control'), 
         reportedOutcome = c('medication report'),
         digitalAssessmentCategory= c('gait', 
@@ -858,8 +862,12 @@ combined_files_annotation_list <- c(
 #' store annotations into synapse
 names(combined_files_annotation_list) %>% 
     purrr::map(., function(synId){
-        synSetAnnotations(
-            synId, annotations = combined_files_annotation_list[[synId]])
+#        synSetAnnotations(
+#            synId, annotations = combined_files_annotation_list[[synId]])
+      proj<-synGet(synId)
+      proj$annotations<-combined_files_annotation_list[[synId]]
+      proj<-synStore(proj)
+      
     }
 )
 
