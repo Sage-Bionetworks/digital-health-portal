@@ -8,9 +8,11 @@
 # Notes, Ideas, To-Dos
 ##############
 ### Note:
-## To successfully run this code, you need write permissions to syn26067631
+## To successfully run this code, you need write permissions to syn8717496
 #
 # Using https://docs.google.com/document/d/19VZ0dWVzFBnWj11xSU0seiFU0pFpVkRK/edit as list of annotations
+#
+#
 #
 
 ##############
@@ -732,7 +734,7 @@ files.annotations = list(
                      diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('USDA Food insecurity survey',
                                         'PhenX Neighborhood Safety survey',
-                                        'PhenX Collective Efficacy survey',
+                                        'PhenX Neighborhood Collective Efficacy survey',
                                         'exposure to violence survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('raw'), 
@@ -1254,7 +1256,7 @@ files.annotations = list(
                      diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('USDA Food insecurity survey',
                                         'PhenX Neighborhood Safety survey',
-                                        'PhenX Collective Efficacy survey',
+                                        'PhenX Neighborhood Collective Efficacy survey',
                                         'exposure to violence survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -1632,7 +1634,7 @@ files.annotations = list(
                      numberParticipants = as.integer(6739), 
                      diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('informed consent'),
-                     dataType=c('assessment'),
+                     dataType=c('surveyData'),
                      dataSubtype=c('processed'), 
                      dhPortalIndex = 'TRUE',
                      dataDescriptionLocation = 'syn26067631/wiki/621695',
@@ -1697,7 +1699,11 @@ names(annots)<-annlist
 for(proj.id in names(files.annotations)){
   
   #### Uncomment this before updating for real
-  synSetAnnotations(proj.id, annotations = files.annotations[[proj.id]])
+  #  synSetAnnotations(proj.id, annotations = files.annotations[[proj.id]])
+  
+  proj<-synGet(proj.id)
+  proj$annotations<-files.annotations[[proj.id]]
+  proj<-synStore(proj)
   ####
   
   print(proj.id)

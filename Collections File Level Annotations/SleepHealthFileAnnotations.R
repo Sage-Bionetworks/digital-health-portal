@@ -482,7 +482,7 @@ tables.annotations = list(
                       dataCollectionMethod= c('passive'),
                       diagnosis= c('control'),
                       deviceType = c('handheld', 'wearable'),
-                      sensorType = c('acceleromter', 'gyroscope'),
+                      sensorType = c('accelerometer', 'gyroscope'),
                       devicePlatform = c('iOS'), 
                       deviceLocation = c('pocket', 'wrist'),
                       # reportedOutcome = c(''), 
@@ -507,6 +507,10 @@ for(proj.id in projects.list){
   #### Uncomment this before updating for real
   # synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
   ####
+  
+  proj<-synGet(proj.id)
+  proj$annotations<-tables.annotations[[proj.id]]
+  proj<-synStore(proj)
   
   print(proj.id)
   print(tables.annotations[[proj.id]])

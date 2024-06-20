@@ -201,7 +201,7 @@ tables.annotations = list(
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
                        digitalAssessmentCategory= c('cardiorespiratory fitness'),
-                       digitalAssessmentDetails = c('treadmill stresstest'),
+                       digitalAssessmentDetails = c('treadmill stress test'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType= c('assessment'), 
@@ -236,7 +236,7 @@ tables.annotations = list(
                        deviceLocation = c('finger'),
                        diagnosis= c('control'), 
                        digitalAssessmentCategory= c('cardiorespiratory fitness'),
-                       digitalAssessmentDetails = c('tecumseh test'),
+                       digitalAssessmentDetails = c('Tecumseh step test'),
                        dataType=c('sensor'),
                        dataSubtype=c('raw', 'processed', 'metadata'),
                        metadataType= c('assessment'), 
@@ -255,6 +255,10 @@ for(proj.id in projects.list){
   #### Uncomment this before updating for real
   # synSetAnnotations(proj.id, annotations = tables.annotations[[proj.id]])
   ####
+  
+  proj<-synGet(proj.id)
+  proj$annotations<-tables.annotations[[proj.id]]
+  proj<-synStore(proj)
   
   print(proj.id)
   print(tables.annotations[[proj.id]])
