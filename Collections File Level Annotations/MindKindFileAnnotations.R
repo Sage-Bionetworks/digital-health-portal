@@ -47,7 +47,7 @@ files.annotations = list(
                        #                       sensorType = c(''),
                        #                       devicePlatform = c('Android'), 
                        #                       deviceLocation = c(''),
-                       diagnosis=  c("control"),  # Think about this
+                       #  diagnosis=  c("control"),  # Think about this
 #                       reportedOutcome =c('demographics survey'),
                        dataType=c('surveyData'),
                        dataSubtype=c('metadata'), 
@@ -67,7 +67,7 @@ files.annotations = list(
 #                       sensorType = c(''),
 #                       devicePlatform = c('Android'), 
 #                       deviceLocation = c(''),
-                       diagnosis=  c("control"),  # Think about this
+                       #  diagnosis=  c("control"),  # Think about this
                        reportedOutcome =c('demographics survey'),
                        dataType=c('surveyData'),
                        dataSubtype=c('metadata'), 
@@ -87,7 +87,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(),  # Think about this
+#                     diagnosis=  c('control'),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -107,7 +107,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+#                     diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -127,7 +127,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+#                     diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -147,7 +147,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+#                     diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('USDA Food insecurity survey',
                                         'PhenX Neighborhood Safety survey',
                                         'PhenX Neighborhood Collective Efficacy survey',
@@ -170,7 +170,7 @@ files.annotations = list(
                       #                       sensorType = c(''),
                       #                       devicePlatform = c('Android'), 
                       #                       deviceLocation = c(''),
-                      diagnosis=  c("control"),  # Think about this
+#                      diagnosis=  c("control"),  # Think about this
                       reportedOutcome =c('habits survey',
                                          'physical activity',
                                          'phone usage'),
@@ -192,7 +192,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+#                     diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('WHODAS',
                                         'PHQ-9',
                                         'GAD-7',
@@ -215,7 +215,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+#                     diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'physical activity'),
                      dataType=c('surveyData'),
@@ -236,7 +236,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+#                     diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('International Physical Activity Questionnaire',
                                         'physical activity',
                                         'PHQ-9',
@@ -259,7 +259,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('International Physical Activity Questionnaire',
                                         'physical activity',
                                         'PHQ-9',
@@ -282,7 +282,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'activity report'),
                      dataType=c('surveyData'),
@@ -303,7 +303,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Behavioural Activation for Depression Scale (BADS)',
                                         'activity report',
                                         'PHQ-9',
@@ -326,7 +326,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Behavioural Activation for Depression Scale (BADS)',
                                         'activity report',
                                         'PHQ-9',
@@ -349,7 +349,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'sleep report'),
                      dataType=c('surveyData'),
@@ -370,7 +370,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Insomnia Severity Index',
                                         'sleep report',
                                         'PHQ-9',
@@ -393,7 +393,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Insomnia Severity Index',
                                         'sleep report',
                                         'PHQ-9',
@@ -416,7 +416,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'activity report'),
                      dataType=c('surveyData'),
@@ -437,7 +437,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('UCLA Loneliness Scale',
                                         'activity report',
                                         'PHQ-9',
@@ -460,7 +460,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('UCLA Loneliness Scale',
                                         'activity report',
                                         'PHQ-9',
@@ -483,7 +483,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -504,7 +504,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -525,7 +525,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -546,7 +546,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -567,7 +567,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -588,7 +588,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -610,7 +610,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('feedback survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -634,7 +634,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
 #                     reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -654,7 +654,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -674,7 +674,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('raw'), 
@@ -693,7 +693,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('raw'), 
@@ -712,7 +712,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('raw'), 
@@ -731,7 +731,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('USDA Food insecurity survey',
                                         'PhenX Neighborhood Safety survey',
                                         'PhenX Neighborhood Collective Efficacy survey',
@@ -753,7 +753,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('habits survey',
                                         'physical activity',
                                         'phone usage'),
@@ -774,7 +774,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('WHODAS',
                                         'PHQ-9',
                                         'GAD-7',
@@ -796,7 +796,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'physical activity'),
                      dataType=c('surveyData'),
@@ -816,7 +816,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('International Physical Activity Questionnaire',
                                         'physical activity',
                                         'PHQ-9',
@@ -838,7 +838,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('International Physical Activity Questionnaire',
                                         'physical activity',
                                         'PHQ-9',
@@ -860,7 +860,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'activity report'),
                      dataType=c('surveyData'),
@@ -880,7 +880,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Behavioural Activation for Depression Scale (BADS)',
                                         'activity report',
                                         'PHQ-9',
@@ -902,7 +902,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Behavioural Activation for Depression Scale (BADS)',
                                         'activity report',
                                         'PHQ-9',
@@ -924,7 +924,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'sleep report'),
                      dataType=c('surveyData'),
@@ -944,7 +944,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Insomnia Severity Index',
                                         'sleep report',
                                         'PHQ-9',
@@ -966,7 +966,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('Insomnia Severity Index',
                                         'sleep report',
                                         'PHQ-9',
@@ -988,7 +988,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'activity report'),
                      dataType=c('surveyData'),
@@ -1008,7 +1008,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('UCLA Loneliness Scale',
                                         'activity report',
                                         'PHQ-9',
@@ -1030,7 +1030,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('UCLA Loneliness Scale',
                                         'activity report',
                                         'PHQ-9',
@@ -1052,7 +1052,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1072,7 +1072,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1092,7 +1092,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1112,7 +1112,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1132,7 +1132,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1152,7 +1152,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1173,7 +1173,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('feedback survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('raw'), 
@@ -1196,7 +1196,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(),  # Think about this
+                     #  diagnosis=  c(),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'), 
@@ -1215,7 +1215,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'), 
@@ -1234,7 +1234,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('demographics survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'),
@@ -1253,7 +1253,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('USDA Food insecurity survey',
                                         'PhenX Neighborhood Safety survey',
                                         'PhenX Neighborhood Collective Efficacy survey',
@@ -1275,7 +1275,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('habits survey',
                                         'physical activity',
                                         'phone usage'),
@@ -1296,7 +1296,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('WHODAS',
                                         'PHQ-9',
                                         'GAD-7',
@@ -1318,7 +1318,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'physical activity'),
                      dataType=c('surveyData'),
@@ -1338,7 +1338,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('International Physical Activity Questionnaire',
                                         'physical activity',
                                         'PHQ-9',
@@ -1360,7 +1360,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'activity report'),
                      dataType=c('surveyData'),
@@ -1380,7 +1380,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('Behavioural Activation for Depression Scale (BADS)',
                                         'activity report',
                                         'PHQ-9',
@@ -1402,7 +1402,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'sleep report'),
                      dataType=c('surveyData'),
@@ -1422,7 +1422,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('Insomnia Severity Index',
                                         'sleep report',
                                         'PHQ-9',
@@ -1444,7 +1444,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'activity report'),
                      dataType=c('surveyData'),
@@ -1464,7 +1464,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('UCLA Loneliness Scale',
                                         'activity report',
                                         'PHQ-9',
@@ -1486,7 +1486,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1506,7 +1506,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1526,7 +1526,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1546,7 +1546,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1566,7 +1566,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1586,7 +1586,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('mood',
                                         'feedback survey'),
                      dataType=c('surveyData'),
@@ -1607,7 +1607,7 @@ files.annotations = list(
                      #                       sensorType = c(''),
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
-                     diagnosis=  c(""),  # Think about this
+                     #  diagnosis=  c(""),  # Think about this
                      reportedOutcome =c('feedback survey'),
                      dataType=c('surveyData'),
                      dataSubtype=c('metadata'), 
@@ -1632,7 +1632,7 @@ files.annotations = list(
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
                      numberParticipants = as.integer(6739), 
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('informed consent'),
                      dataType=c('surveyData'),
                      dataSubtype=c('processed'), 
@@ -1651,7 +1651,7 @@ files.annotations = list(
                       #                       devicePlatform = c('Android'), 
                       #                       deviceLocation = c(''),
                       numberParticipants = as.integer(2175), 
-                      diagnosis=  c("control"),  # Think about this
+                      #  diagnosis=  c("control"),  # Think about this
                       reportedOutcome =c('data governance preferences'),
                       dataType=c('surveyData'),
                       dataSubtype=c('raw'), 
@@ -1670,7 +1670,7 @@ files.annotations = list(
                      #                       devicePlatform = c('Android'), 
                      #                       deviceLocation = c(''),
                      numberParticipants = as.integer(902), 
-                     diagnosis=  c("control"),  # Think about this
+                     #  diagnosis=  c("control"),  # Think about this
                      reportedOutcome =c('data governance preferences'),
                      dataType=c('surveyData'),
                      dataSubtype=c('raw'), 
