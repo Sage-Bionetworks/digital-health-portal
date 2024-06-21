@@ -8,27 +8,30 @@ active,active task or assessment,,,,FALSE,dataCollectionMethod,,
 clinical assessment,clinical assessment or phenotype,,,,FALSE,dataCollectionMethod,,
 passive,passive monitoring or data collection,,,,FALSE,dataCollectionMethod,,
 patient reported outcome,patient reported outcome or phenotype,,,,FALSE,dataCollectionMethod,,
-deviceLocation,Location of wearable device or sensor during data collection,"hand, pocket, flat surface, chest, finger, wrist, face, waist, forearm, shank, back",,,FALSE,dHealth,,
+deviceLocation,Location of wearable device or sensor during data collection,"hand, pocket, flat surface, chest, finger, wrist, face, waist, forearm, shank, back, various",,,FALSE,dHealth,,
 back,The dorsal area between the base of the neck and the sacrum.,,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C13062
 chest,The anterior side of the thorax from the neck to the abdomen.,,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C25389
 face,"The anterior portion of the head extending from the forehead to the chin and ear to ear. The facial structures contain the eyes, nose and mouth, cheeks and jaws.",,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C13071
 finger,Any of the digits of the hand.,,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C32608
-flat surface,"A plane horizontalÊsurface such as a table, desk or counter top",,,,FALSE,deviceLocation,,
+flat surface,"A plane horizontalÂ surface such as a table, desk or counter top",,,,FALSE,deviceLocation,,
 forearm,"The structure on the upper limb, between the elbow and the wrist.",,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C32628
 hand,"The distal portion of the upper extremity. It consists of the carpus, metacarpus, and digits.",,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C32712
 pocket,"a small bag sewn into or on clothing so as to form part of it, used for carrying small articles",,,,FALSE,deviceLocation,,
 shank,"Lower leg, between the knee and ankle.",,,,FALSE,deviceLocation,,
-waist,The abdominal circumference at the navel.Ê,,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C64192
+various,Multiple locations,,,,FALSE,deviceLocation,,
+waist,The abdominal circumference at the navel.Â ,,,,FALSE,deviceLocation,,http://purl.obolibrary.org/obo/NCIT_C64192
 wrist,Narrow region between the hand and the forearm,,,,FALSE,deviceLocation,,
-devicePlatform,The device platform or operating system that is used to carry out an experiment.,"Android, Fitbit, GENEActiv, iOS, Pantone, Pebble OS, Polar, Shimmer, Windows",,,FALSE,dHealth,,
+devicePlatform,The device platform or operating system that is used to carry out an experiment.,"Android, Compumedics Ltd., Fitbit, GENEActiv, iOS, Pantone, Pebble OS, Philips Respironics, Polar, Shimmer, Windows",,,FALSE,dHealth,,
 Android,"touchscreen and wearable mobile devices such as smartphones, tablets and smartwatches running Android software",,,,FALSE,devicePlatform,,
-Fitbit,"activity trackers,Êsmartwatches,Êwearable technologyÊdevicesÊmanufactured by Fitbit",,,,FALSE,devicePlatform,,
+Compumedics Ltd.,CompumedicsÂ designs and manufactures technologies for the diagnosis of sleep disorders.,,,,FALSE,devicePlatform,,
+Fitbit,"activity trackers,Â smartwatches,Â wearable technologyÂ devicesÂ manufactured by Fitbit",,,,FALSE,devicePlatform,,
 GENEActiv,wearable devices manufactured by Activinsights,,,,FALSE,devicePlatform,,
 iOS,"phones, tablets and wearables manufacturered by Apple",,,,FALSE,devicePlatform,,
-OSX,"A plane horizontalÊsurface such as a table, desk or counter top",,,,FALSE,devicePlatform,,
+OSX,"A plane horizontalÂ surface such as a table, desk or counter top",,,,FALSE,devicePlatform,,
 Pantone,"Device manufactured by Pantone, cheifly spectrocolorimeters.",,,,FALSE,devicePlatform,,
 Pebble OS,wearable device manufactured by Pebble Technology Corporation,,,,FALSE,devicePlatform,,
-Polar,"activity trackers,Êheartrate monitors, smartwatches,Êwearable technologyÊdevicesÊmanufactured by Polar Electro",,,,FALSE,devicePlatform,,
+Philips Respironics,Philips RespironicsÂ manufactures products for the global sleep and respiratory markets.,,,,FALSE,devicePlatform,,
+Polar,"activity trackers,Â heartrate monitors, smartwatches,Â wearable technologyÂ devicesÂ manufactured by Polar Electro",,,,FALSE,devicePlatform,,
 Shimmer,wearable sensors manufactured by Shimmer ,,,,FALSE,devicePlatform,,
 Windows,"Device running Windows platform manufactured by Microsoft, which could include PCs, phones, gaming systems and more.",,,,FALSE,devicePlatform,,
 deviceType,type of device used to collect data,"handheld, wearable",,,TRUE,dHealth,,
@@ -44,11 +47,13 @@ melanoma,"A cell type cancer that has_material_basis_in abnormally proliferating
 multiple sclerosis,A demyelinating disease that involves damage to the fatty myelin sheaths around the axons of the brain and spinal cord resulting in demyelination and scarring.,,,,FALSE,diagnosis,,http://purl.obolibrary.org/obo/DOID_2377
 Parkinson's Disease,"A synucleinopathy that has_material_basis_in degeneration of the central nervous system that often impairs motor skills, speech, and other functions.",,,,FALSE,diagnosis,,http://purl.obolibrary.org/obo/DOID_14330
 sleep related disorder,"An abnormality of sleep which may such phenomena as insomnia/hypersomnia, non-restorative sleep, sleep schedule disorder, excessive daytime somnolence, sleep apnea, and/or restlessness.",,,,FALSE,diagnosis,,
-digitalAssessmentCategory,Disease or phenotype category for sensor-based assessments.,"action tremor, cardiorespiratory fitness, cardiovascular, cognition, dermatologic phenotype, gait, mental health, mobility, mood, motor coordination, participant engagement, phonation, physical activity, postural tremor, quality of life, respiratory, resting tremor, skin color, sleep",,,TRUE,dHealth,,
+tuberculosis,"A primary bacterial infectious disease that is located_in lungs, located_in lymph nodes, located_in pericardium, located_in brain, located_in pleura or located_in gastrointestinal tract, has_material_basis_in Mycobacterium tuberculosis",,,,FALSE,diagnosis,,https://disease-ontology.org/?id=DOID:14330
+digitalAssessmentCategory,Disease or phenotype category for sensor-based assessments.,"action tremor, cardiorespiratory fitness, cardiovascular, cognition, cough, dermatologic phenotype, gait, mental health, mobility, mood, motor coordination, participant engagement, phonation, physical activity, positive activities, postural tremor, quality of life, respiratory, resting tremor, skin color, sleep, social activity",,,TRUE,dHealth,,
 action tremor,"A tremor present when the limbs are active, either when outstretched in a certain position or throughout a voluntary movement.",,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/HP_0002345
 cardiorespiratory fitness,The ability of the heart and lungs to deliver blood and oxygen to the tissues during aerobic activity. It is a general measure of the relative conditioning of the heart and respiratory system.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C88164
 cardiovascular,Relating to the heart and blood vescles.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C25292
-cognition,"The mental processes involved in gaining knowledge and comprehension. Cognitive processes include thinking, knowing, remembering, judging, andÊproblem-solving. These are higher-level functions of the brain and encompass language, imagination, perception, and planning.",,,,FALSE,digitalAssessmentCategory,,
+cognition,"The mental processes involved in gaining knowledge and comprehension. Cognitive processes include thinking, knowing, remembering, judging, andÂ problem-solving. These are higher-level functions of the brain and encompass language, imagination, perception, and planning.",,,,FALSE,digitalAssessmentCategory,,
+cough,"A sudden, often repetitive, spasmodic contraction of the thoracic cavity, resulting in violent release of air from the lungs, and usually accompanied by a distinctive sound.",,,,FALSE,digitalAssessmentCategory,,https://ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C37935
 dermatologic phenotype,"Traits involving the skin, hair and/or nails.",,,,FALSE,digitalAssessmentCategory,,
 gait,"A pattern or manner of running, walking, or moving on foot.",,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C75445
 mental health,"Emotional, psychological, and social well-being of an individual or group.",,,,FALSE,digitalAssessmentCategory,,
@@ -58,12 +63,14 @@ motor coordination,The combination of body movements created with the kinematic 
 participant engagement,Degree of commitment and participation of a study subject.,,,,FALSE,digitalAssessmentCategory,,
 phonation,The process of producing vocal sounds by vibration of the vocal cords during an expiration of air.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C92447
 physical activity,A measurement of a subject's physical activity or movement.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C120914
+positive activities,Practices meant to mimic the myriad healthy thoughts and behaviors associated with naturally happy people.,,,,FALSE,digitalAssessmentCategory,,https://journals.sagepub.com/doi/10.1177/0963721412469809
 postural tremor,A type of tremors that is triggered by holding a limb in a fixed position.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/HP_0002174
 quality of life,"The standard of health, comfort, well-being, and happiness experienced by an individual or group.",,,,FALSE,digitalAssessmentCategory,,
 respiratory,Relating to the respiratory system.,,,,FALSE,digitalAssessmentCategory,,
 resting tremor,A resting tremor occurs when muscles are at rest and becomes less noticeable or disappears when the affected muscles are moved. Resting tremors are often slow and coarse.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/HP_0002322
 skin color,Color or darkness/lightness of skin.,,,,FALSE,digitalAssessmentCategory,,
 sleep,Related to the natural and periodic state of rest during which consciousness of the world is suspended.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C73425
+social activity,A measure or assessment of one's interactions with other people.,,,,FALSE,digitalAssessmentCategory,,
 digitalAssessmentDetails,Specific activities performed during digital assessments.,,,,FALSE,dHealth,,
 12-min run test,An assessment of cardiorespiratory fitness in which the subject runs or walks at full capacity for 12 minutes. The resulting distance has been shown to be correlated with VO2max.,,,,FALSE,digitalAssessmentDetails,,
 3-minute Psychomotor Vigilance Task (PVT-B),A test of simple reaction time (RT) to stimuli that occur at random intervals and therefore measures vigilant attention.,,,,FALSE,digitalAssessmentDetails,,https://doi.org10.1016/j.actaastro.2011.07.015
@@ -82,13 +89,16 @@ finger-to-nose,"A motor task as follows. The subject starts with the arm in an o
 flights climbed,A quantity sample type that measures the number flights of stairs that the user has climbed,,,,FALSE,digitalAssessmentDetails,,
 folding towels,A motor task in which the subject folds towels.,,,,FALSE,digitalAssessmentDetails,,
 heart rate,"The number of heartbeats per unit of time, usually expressed as beats per minute.",,,,FALSE,digitalAssessmentDetails,,http://purl.obolibrary.org/obo/NCIT_C49677
+heart rate variability,Heart rate variability (HRV) is the physiological phenomenon of variation in the time interval between heartbeats. It is measured by the variation in the beat-to-beat interval.,,,,FALSE,digitalAssessmentDetails,,http://purl.obolibrary.org/obo/CMO_0002812
 matching tiles,A memory assessment task in with the subject matches shapes hidden under tiles.,,,,FALSE,digitalAssessmentDetails,,
+natural cough,A spontaneous reflex that's part of the body's immune system and helps protect the lungs and airways from irritants.,,,,FALSE,digitalAssessmentDetails,,
 opening a water bottle and pouring,A motor task in which the subject opens a bottle of water and pours the contents into a glass.,,,,FALSE,digitalAssessmentDetails,,
 phonation,"A task in which the subject attempts to produce a constant ""aaaaaaa"" sound.",,,,FALSE,digitalAssessmentDetails,,
 photograph,Photograph of the subject or a specific body part.,,,,FALSE,digitalAssessmentDetails,,
 resting,A state in which the subject is not moving.,,,,FALSE,digitalAssessmentDetails,,
 resting energy burned,A quantity sample type that measures the resting energy burned by the user.,,,,FALSE,digitalAssessmentDetails,,
 sitting,The act of assuming or maintaining a seated position.,,,,FALSE,digitalAssessmentDetails,,
+sleep scoring,Sleep stage scoring involvesÂ applying a set of rules in order to classify polysomnographic activity occurring over a defined period of time into one or another category.,,,,FALSE,digitalAssessmentDetails,,
 standing,The act of assuming or maintaining an erect upright position.,,,,FALSE,digitalAssessmentDetails,,http://purl.obolibrary.org/obo/NCIT_C62166
 step count,A quantity sample type that measures the number of steps the user has taken.,,,,FALSE,digitalAssessmentDetails,,
 survey,A question or series of questions.,,,,FALSE,digitalAssessmentDetails,,
@@ -107,9 +117,11 @@ asthma management,A report describing subject's management of asthma symptoms.,,
 asthma symptoms,"A report describing the frequency, duration and/or quality of asthma symptoms.",,,,FALSE,reportedOutcome,,
 asthma triggers,A report describing triggers of asthmatic symptoms.,,,,FALSE,reportedOutcome,,
 AUDIT-C,"A standardized rating scale developed by the World Health Organization (WHO), which is a modified version of the original Alcohol Use Disorder Identification Test (AUDIT). The questionnaire contains 3 questions, and is used to identify patients who are hazardous drinkers or have active alcohol use disorders.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/NCIT_C119098
+Behavioural Activation for Depression Scale (BADS),"A standardized instrument to track changes weekly in the behaviors hypothesized to underlie depression and specifically targeted for change by behavioral activation. It examines changes in the following areas: activation, avoidance/rumination, work/school impairment, and social impairment.",,,,FALSE,reportedOutcome,,https://link.springer.com/article/10.1007/s10862-006-9038-5
 blood pressure,The pressure of the circulating blood against the walls of the blood vessels.,,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/NCIT_C54706
 bradykinesia,"Report describing bradykinesia, a hypokinesia characterized by an extreme slowness in the execution of movements and reflexes.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/SYMP_0000673
 cholesterol,The determination of the amount of total cholesterol present in a sample.,,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/NCIT_C105586
+data governance preferences,Participant preferences on the governance of their data.,,,,FALSE,reportedOutcome,,
 demographics survey,"A report describing subject demographics such as age, sex, etc.",,,,FALSE,reportedOutcome,,
 diabetes,"A report describing diabetes diagnoses, symptoms or related phenotypes.",,,,FALSE,reportedOutcome,,
 diet survey,A report describing characteristics of food consumed.,,,,FALSE,reportedOutcome,,
@@ -117,19 +129,25 @@ disease risk,A report assessing risk for a particular disease.,,,,FALSE,reported
 distance,"A report of distance, usually related to a physical activity such as walking, running or biking.",,,,FALSE,reportedOutcome,,
 dyskinesia,"A report describing dyskinesia, a movement disorder which consists of effects including diminished voluntary movements and the presence of involuntary movements.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/HP_0100660
 EQ-5D,"The EuroQol (European Quality of Life) Five Dimension questionaire, which asks a patient to rate their health with respect to mobility, self-care, usual activities, pain/discomfort and anxiety/depression.",,,,FALSE,reportedOutcome,,https://euroqol.org/
+exposure to violence survey,A report detailing current or past exposure to violence.,,,,FALSE,reportedOutcome,,
 family history,Family history is a form of clinicaly history specifically about relevant aspects of genetic preconditions or family member's clinical history.,,,,FALSE,reportedOutcome,,http://www.ebi.ac.uk/efo/EFO_0000493
 fasting glucose,"A quantitative measurement of the amount of glucose present in a sample of blood, obtained from a source that has abstained from nutrition, typically at least 8 hours prior to the sample collection time.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/MAXO_0000569
 feedback survey,A survey describing a subject's experience in a study.,,,,FALSE,reportedOutcome,,
 followup survey,A survey administered after the close of a study.,,,,FALSE,reportedOutcome,,
 freezing of gait,"A report describing freezing of gait symptoms, a brief, episodic absence or marked reduction of forward progression of the feet despite the intention to walk.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/HP_0031825
 GAD-7,"Generalized Anxiety Disorder 7 Questionnaire, a seven item validated, self-reported questionnaire for screening, and assessing the severity of generalized anxiety disorder in clinical practice and research settings.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/NCIT_C103519
+habits survey,A report describing a subject's habits or regular activites.,,,,FALSE,reportedOutcome,,
 heart age,"An assessment of risk for heart attack or stroke based on factors such as age, blood pressure, cholesterol, as well as lifestyle.",,,,FALSE,reportedOutcome,,
 height,The distance from the sole to the crown of the head with body standing on a flat surface and fully extended.,,,,FALSE,reportedOutcome,,
 hypertension,A report related to high blood pressure or chronic high blood pressure.,,,,FALSE,reportedOutcome,,
 inclusion survey,A survey to assess a subject's qualification for a study.,,,,FALSE,reportedOutcome,,
+informed consent,A report about a subject's informed consent to participate in a study.,,,,FALSE,reportedOutcome,,
+Insomnia Severity Index,A brief screening tool for insomnia which asks respondents to rate the nature and symptoms of their sleep problems using a Likert-type scale.,,,,FALSE,reportedOutcome,,http://doi.org/10.1093/sleep/34.5.601
+International Physical Activity Questionnaire,An instrument developed for cross-national monitoring of physical activity and inactivity.,,,,FALSE,reportedOutcome,,http://doi.org/10.1249/01.MSS.0000078924.61453.FB
 MDS-UPDRS,Results of one or more sections of the The Movement Disorder Society version of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS) assessment.,,,,FALSE,reportedOutcome,,
 medical history,A report about a subject's medical history.,,,,FALSE,reportedOutcome,,
 medication report,A report or log of medication intake.,,,,FALSE,reportedOutcome,,
+mental health history,A report about a subject's mental health history.,,,,FALSE,reportedOutcome,,
 mole diameter,An assessment of mole size.,,,,FALSE,reportedOutcome,,
 mole location,A report of mole location.,,,,FALSE,reportedOutcome,,
 mole removal status,A report about whether or not a mole has been surgically removed.,,,,FALSE,reportedOutcome,,
@@ -139,6 +157,8 @@ NeuroQOL-LowerExtremity,"The subdomain of the Quality of Life in Neurological Di
 NeuroQOL-UpperExtremity,"The subdomain of the Quality of Life in Neurological Disorders (Neuro-QoL) survey that assess perceived difficulties in ability to carry out various activities involving the trunk region and increasing degrees of bodily movement, ambulation, balance or endurance.",,,,FALSE,reportedOutcome,,http://www.healthmeasures.net/images/neuro_qol/Neuro-QOL_User_Manual_v2_24Mar2015.pdf
 PAR-Q,National Academy of Sports Medicine Physical Activity Readiness Questionaire.,,,,FALSE,reportedOutcome,,https://www.nasm.org/docs/default-source/PDF/nasm_par-q-(pdf-21k).pdf
 PDQ-8,"Parkinson's Disease Questionnaire, 8 question version.",,,,FALSE,reportedOutcome,,https://innovation.ox.ac.uk/outcome-measures/parkinsons-disease-questionnaire-pdq-39-pdq-8/
+PhenX Neighborhood Collective Efficacy survey,This measure is a questionnaire to assess the mutual trust and shared expectations among neighbors.,,,,FALSE,reportedOutcome,,https://www.phenxtoolkit.org/protocols/view/210801
+PhenX Neighborhood Safety survey,This measure is a questionnaire to assess the respondentâ€™s perceptions about safety and crime in their neighborhoods.,,,,,,,https://www.phenxtoolkit.org/protocols/view/210901
 phone usage,A report about phone usage.,,,,FALSE,reportedOutcome,,
 PHQ-2,"Patient Health Questionnaire-2, a 2-item scale used to screen for depression and anhedonia over the past 2 weeks. It is comprised of the first 2 items of the Patient Health Questionnaire-9.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/NCIT_C157728
 PHQ-9,"Patient Health Questionnaire-9, a 9-item scale using each of the 9 DSM-IV criteria for depression with self-reported frequency of ""0"" (not at all) to ""3"" (nearly every day). One of the most widely used instruments to assess depression, PHQ-9 scores of 5, 10, 15, and 20 represent mild, moderate, moderately severe, and severe depression, respectively.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/NCIT_C103526
@@ -153,10 +173,13 @@ step count,An activity report that quantifies the number of steps taken.,,,,FALS
 symptoms report,"A report about presence, duration or severity of symptoms.",,,,FALSE,reportedOutcome,,
 tremor,"A report describing tremor, a generial symptom characterized by a trembling or shaking usually from physical weakness, emotional stress, or disease.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/SYMP_0000162
 triggers report,A report describing triggers for symptoms.,,,,FALSE,reportedOutcome,,
+UCLA Loneliness Scale,An instrument to measure loneliness.,,,,FALSE,reportedOutcome,,http://doi.org/10.1177/0164027504268574
+USDA Food insecurity survey,A survey to assess food insecurity,,,,FALSE,reportedOutcome,,https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/survey-tools
 vo2max,"A physiological assay to determine the maximum capacity of an individual's body to transport and use oxygen during incremental exercise, which reflects the physical fitness of the individual.",,,,FALSE,reportedOutcome,,http://purl.obolibrary.org/obo/ERO_0001819
 weight,The mass or quantity of heaviness of an individual. ,,,,FALSE,reportedOutcome,,
+WHODAS,A WHO instrument to measure disability.,,,,FALSE,reportedOutcome,,https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule
 ZIP code,A report of location in the form of postal code.,,,,FALSE,reportedOutcome,,
-sensorType,Sensor used to collect data,"accelerometer, camera, gps, gyroscope, magnetometer, microphone, oximeter, pedometer, photodetector, photosensor, spectrocolorimeter, touchscreen",,,FALSE,dHealth,,
+sensorType,Sensor used to collect data,"accelerometer, camera, gps, gyroscope, magnetometer, microphone, oximeter, pedometer, photodetector, photosensor, polysomnography, spectrocolorimeter, touchscreen",,,FALSE,dHealth,,
 accelerometer,sensor that measures acceleration,,,,FALSE,sensorType,,
 camera,camera or other image sensor,,,,FALSE,sensorType,,
 gps,global positioning system to measure the location on the earth's surface,,,,FALSE,sensorType,,
@@ -166,21 +189,23 @@ microphone,sensor that measures sound,,,,FALSE,sensorType,,
 oximeter,an instrument for measuring the proportion of oxygenated hemoglobin in the blood,,,,FALSE,sensorType,,
 pedometer,instrument for estimating the distance traveled on foot by recording the number of steps taken,,,,FALSE,sensorType,,
 photosensor,sensors of light or other electromagnetic radiation,,,,FALSE,sensorType,,
+polysomnography,,,,,,,,
 spectrocolorimeter,instrument that characterizes color,,,,FALSE,sensorType,,
 touchscreen,"touchscreen on a phone, tablet, watch or similar device",,,,FALSE,sensorType,,
-study,Study from during which the data were collected,"mPower Mobile Parkinson Disease Study, Mole Mapper Study, Asthma Mobile Health Study, elevateMS Study, Heart Snapshot Study, MyHeart Counts Cardiovascular Health Study, MJFF Levodopa Response,  Study, Brighten Study, Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge,
-Participant Retention in Digital Health Studies, SleepHealth Mobile App Study ",,,TRUE,dHealth,,
+study,Study from during which the data were collected,"mPower Mobile Parkinson Disease Study, Mole Mapper Study, Asthma Mobile Health Study, elevateMS Study, Heart Snapshot Study, MindKind Study, MyHeart Counts Cardiovascular Health Study, MJFF Levodopa Response,  Study, Brighten Study, Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge,
+Participant Retention in Digital Health Studies, SleepHealth Mobile App Study, BEAT-PD DREAM Challenge, MindKind Study ",,,TRUE,dHealth,,
 mPower Mobile Parkinson Disease Study,mPower Mobile Parkinson Disease Study,,,,FALSE,study,,
 Mole Mapper Study,Mole Mapper Study,,,,FALSE,study,,
 Asthma Mobile Health Study,Asthma Mobile Health Study,,,,FALSE,study,,
 elevateMS Study,elevateMS Study,,,,FALSE,study,,
 Heart Snapshot Study,Heart Snapshot Study,,,,FALSE,study,,
+MindKind Study,MindKind Study,,,,,,,
 MyHeart Counts Cardiovascular Health Study,MyHeart Counts Cardiovascular Health Study,,,,FALSE,study,,
 MJFF Levodopa Response Study,MJFF Levodopa Response Study,,,,FALSE,study,,
 Brighten Study,Brighten Study,,,,FALSE,study,,
 Parkinsons Disease Digital Biomarker (PDDB) DREAM Challenge,,,,,FALSE,study,,
 Participant Retention in Digital Health Studies,,,,,FALSE,study,,
-SleepHealth Mobile App StudyÊ,,,,,FALSE,study,,
+SleepHealth Mobile App StudyÂ ,,,,,FALSE,study,,
 dHealthData,,,,,FALSE,,,
 dataDescriptionLocation,"Synapse location of the data description to be linked to from the portal. Locations should be in the form of Synapse wiki paths (e.g. syn20681023/wiki/594683 or syn20681023/wiki/594685) or Synapse IDs, as appropriate.",,,,TRUE,dHealthData,,
 dataType,Types of data,"clinical, sensor, surveyData, analysis",,,TRUE,dHealthData,,
@@ -227,6 +252,7 @@ dataUsed,Markdown links to the list of studies used in an analytical project or 
 [Brighten Study](/Explore/Collections/DetailsPage?study=Brighten%20Study),Portal link to Brighten study,,,,FALSE,dataUsed,,
 [elevateMS Study](/Explore/Collections/DetailsPage?study=elevateMS%20Study),Portal link to elevateMS study,,,,FALSE,dataUsed,,
 [Heart Snapshot Study](/Explore/Collections/DetailsPage?study=Heart%20Snapshot%20Study),Portal link to Heart Snapshot study,,,,FALSE,dataUsed,,
+[MindKind Study](/Explore/Collections/DetailsPage?study=MindKind%20Study),Portal link to MindKind study,,,,,,,
 [MJFF Levodopa Response Study](/Explore/Collections/DetailsPage?study=MJFF%20Levodopa%20Response%20Study),Portal link to MJFF Levodopa Response study,,,,FALSE,dataUsed,,
 [Mole Mapper Study](/Explore/Collections/DetailsPage?study=Mole%20Mapper%20Study),Portal link to Mole Mapper study,,,,FALSE,dataUsed,,
 [mPower Mobile Parkinson Disease Study](/Explore/Collections/DetailsPage?study=mPower%20Mobile%20Parkinson%20Disease%20Study),Portal link to mPower study,,,,FALSE,dataUsed,,
@@ -288,11 +314,12 @@ Dockstore,,,,,FALSE,softwareRepository,,
 suggestedStudies,List of studies for which this is a suggested tool,,,,FALSE,dHealthTool,,
 summary,Brief 1-2 sentence description of the tool or software.,,,,TRUE,dHealthTool,,
 url,URL where the software/tool is stored.,,,,TRUE,dHealthTool,,
-digitalAssessmentCategory,Disease or phenotype category for sensor-based assessments.,"action tremor, cardiorespiratory fitness, cardiovascular, cognition, dermatologic phenotype, gait, mental health, mobility, mood, motor coordination, participant engagement, phonation, physical activity, postural tremor, quality of life, respiratory, resting tremor, skin color, sleep",,,TRUE,dHealthTool,,
+digitalAssessmentCategory,Disease or phenotype category for sensor-based assessments.,"action tremor, cardiorespiratory fitness, cardiovascular, cognition, cough, dermatologic phenotype, gait, mental health, mobility, mood, motor coordination, participant engagement, phonation, physical activity, positive activities, postural tremor, quality of life, respiratory, resting tremor, skin color, sleep, social activity",,,TRUE,dHealthTool,,
 action tremor,"A tremor present when the limbs are active, either when outstretched in a certain position or throughout a voluntary movement.",,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/HP_0002345
 cardiorespiratory fitness,The ability of the heart and lungs to deliver blood and oxygen to the tissues during aerobic activity. It is a general measure of the relative conditioning of the heart and respiratory system.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C88164
 cardiovascular,Relating to the heart and blood vescles.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C25292
-cognition,"The mental processes involved in gaining knowledge and comprehension. Cognitive processes include thinking, knowing, remembering, judging, andÊproblem-solving. These are higher-level functions of the brain and encompass language, imagination, perception, and planning.",,,,FALSE,digitalAssessmentCategory,,
+cognition,"The mental processes involved in gaining knowledge and comprehension. Cognitive processes include thinking, knowing, remembering, judging, andÂ problem-solving. These are higher-level functions of the brain and encompass language, imagination, perception, and planning.",,,,FALSE,digitalAssessmentCategory,,
+cough,"A sudden, often repetitive, spasmodic contraction of the thoracic cavity, resulting in violent release of air from the lungs, and usually accompanied by a distinctive sound.",,,,FALSE,digitalAssessmentCategory,,https://ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C37935
 dermatologic phenotype,"Traits involving the skin, hair and/or nails.",,,,FALSE,digitalAssessmentCategory,,
 gait,"A pattern or manner of running, walking, or moving on foot.",,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C75445
 mental health,"Emotional, psychological, and social well-being of an individual or group.",,,,FALSE,digitalAssessmentCategory,,
@@ -302,10 +329,12 @@ motor coordination,The combination of body movements created with the kinematic 
 participant engagement,Degree of commitment and participation of a study subject.,,,,FALSE,digitalAssessmentCategory,,
 phonation,The process of producing vocal sounds by vibration of the vocal cords during an expiration of air.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C92447
 physical activity,A measurement of a subject's physical activity or movement.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C120914
+positive activities,Practices meant to mimic the myriad healthy thoughts and behaviors associated with naturally happy people.,,,,FALSE,digitalAssessmentCategory,,https://journals.sagepub.com/doi/10.1177/0963721412469809
 postural tremor,A type of tremors that is triggered by holding a limb in a fixed position.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/HP_0002174
 quality of life,"The standard of health, comfort, well-being, and happiness experienced by an individual or group.",,,,FALSE,digitalAssessmentCategory,,
 respiratory,Relating to the respiratory system.,,,,FALSE,digitalAssessmentCategory,,
 resting tremor,A resting tremor occurs when muscles are at rest and becomes less noticeable or disappears when the affected muscles are moved. Resting tremors are often slow and coarse.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/HP_0002322
 skin color,Color or darkness/lightness of skin.,,,,FALSE,digitalAssessmentCategory,,
 sleep,Related to the natural and periodic state of rest during which consciousness of the world is suspended.,,,,FALSE,digitalAssessmentCategory,,http://purl.obolibrary.org/obo/NCIT_C73425
+social activity,A measure or assessment of one's interactions with other people.,,,,FALSE,digitalAssessmentCategory,,
 featured,Is this tool featured on the portal,"TRUE, FALSE",,,FALSE,dHealthTool,,
